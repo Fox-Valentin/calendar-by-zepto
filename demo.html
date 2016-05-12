@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <script type="text/javascript" src="http://static.juntu.com/mv2.0/p/js/lib_2f88b93.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://static.juntu.com/mv2.0/p/css/base_4449be0.css">
+    <link rel="stylesheet" type="text/css" href="calendar.css">
+    <script src="calendar.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+<!-- <div class="calendar-body jm-pup-body animated" id="calendarPrice">
+<header class="jm-header">
+    <a href="javascript:void(0)" class="jm-header-left_icon close-pup-body">
+    <i class="jm-iconfont"></i>
+    </a>
+    <span>请选择使用日期</span>
+    <a href="#" class="jm-header-right_icon"></a>
+</header>
+<section>
+    <h2 class="jm-order-title"></h2>
+    <div class="jm-datepicker"></div>
+</section>
+</div> -->
+
+</body>
+<script>
+$(document).ready(function() {
+    $.jm_calendar({
+            jm_datepicker_wrap : $('body'),
+            month_num : 5,
+            ajax_url : 'data.php'
+        });
+
+});
+
+
+</script>
+
+</html>

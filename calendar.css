@@ -1,0 +1,217 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, header, hgroup, nav, section, article, aside, footer, figure, figcaption, menu, button {
+    margin: 0;
+    padding: 0;
+}
+a {
+    -webkit-touch-callout: none;
+    text-decoration: none;
+}
+em, i {
+    font-style: normal;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: 400;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+input, button, textarea, select, optgroup, option {
+    font-family: "Microsoft YaHei","微软雅黑",SimSun,"宋体";
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    outline: 0;
+}
+caption, th {
+    text-align: left;
+}
+.calendar-body {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #fcfcfc;
+    overflow: auto;
+    z-index: 1000;
+}
+.calendar-body {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #fcfcfc;
+    overflow: auto;
+    z-index: 1000;
+}
+.fadeInRightBig {
+    -webkit-animation-name: fadeInRightBig;
+    animation-name: fadeInRightBig;
+}
+.jm-header {
+    width: 100%;
+    background-color: #f7f7f7;
+    text-align: center;
+    font-size: 18px;
+    height: 45px;
+    line-height: 45px;
+    color: #353535;
+    box-shadow: 0 0 5px #000;
+    position: relative;
+    z-index: 10;
+}
+.jm-header-left_icon {
+    height: 45px;
+    width: 45px;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+.jm-header-right_icon {
+    height: 45px;
+    width: 45px;
+    right: 0;
+    top: 0;
+    position: absolute;
+}
+.jm-iconfont {
+    font-family: iconfont!important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: .2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+.jm-header-left_icon i, .jm-header-right_icon i {
+    font-size: 30px;
+    color: #39c3d0;
+}
+.jm-order-title {
+    padding: 10px 15px;
+}
+.jm-datepicker {
+    box-sizing: border-box;
+}
+.jm-datepicker .dateTable {
+    width: 98%;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+.jm-datepicker caption {
+    height: 36px;
+    border-top: 1px solid #cecdd1;
+    border-bottom: 1px solid #cecdd1;
+    background-color: #f2f2f2;
+    text-align: center;
+    line-height: 36px;
+}
+.jm-datepicker th {
+    width: 14.2847%;
+    text-align: center;
+    font-weight: 400;
+    padding: 8px 0;
+    box-sizing: border-box;
+}
+.jm-datepicker td {
+    width: 14.2847%;
+    text-align: center;
+    font-weight: 400;
+    height: 50px;
+    box-sizing: border-box;
+    border: 1px solid #dedde0;
+    background-color: #f8f8f8;
+    color: #c9c9c9;
+}
+.jm-datepicker td.active {
+    background-color: #fff;
+    color: #363636;
+    vertical-align: top;
+}
+.jm-datepicker td .dateprice {
+    color: #f60;
+    font-size: 12px;
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both
+}
+
+@-webkit-keyframes fadeInRightBig {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(2000px,0,0);
+        transform: translate3d(2000px,0,0)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+@keyframes fadeInRightBig {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(2000px,0,0);
+        transform: translate3d(2000px,0,0)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+.fadeInRightBig {
+    -webkit-animation-name: fadeInRightBig;
+    animation-name: fadeInRightBig
+}
+
+@-webkit-keyframes fadeOutRightBig {
+    0% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: translate3d(2000px,0,0);
+        transform: translate3d(2000px,0,0)
+    }
+}
+
+@keyframes fadeOutRightBig {
+    0% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: translate3d(2000px,0,0);
+        transform: translate3d(2000px,0,0)
+    }
+}
+
+.fadeOutRightBig {
+    -webkit-animation-name: fadeOutRightBig;
+    animation-name: fadeOutRightBig
+}
+.selected{
+    background-color: #39c3d0!important;
+    color:#fff!important;
+}
+.selected-1{
+    background-color: #39c3d0!important;
+    color:#fff!important;
+}
+.selected1{
+    background-color: #f3b865!important;
+    color:#fff!important;
+}
