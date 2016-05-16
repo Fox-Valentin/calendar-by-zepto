@@ -1,0 +1,713 @@
+.jm-header {
+    width: 100%;
+    background-color: #f7f7f7;
+    text-align: center;
+    font-size: 18px;
+    height: 45px;
+    line-height: 45px;
+    color: #353535;
+    -webkit-box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    position: relative;
+    z-index: 10
+}
+
+.jm-header-left_icon {
+    height: 45px;
+    width: 45px;
+    left: 0px;
+    top: 0;
+    position: absolute;
+}
+
+.jm-header-left_icon i,
+.jm-header-right_icon i {
+    font-size: 30px;
+    color: #39c3d0;
+}
+
+.jm__icon-home {
+    background: url(../images/home.png) center center no-repeat;
+    -webkit-background-size: contain;
+    width: 26px;
+    height: 26px;
+    top: 50%;
+    margin-top: -13px;
+    position: absolute;
+    right: 10px
+}
+
+.jm-header-right_icon {
+    height: 45px;
+    width: 45px;
+    right: 0px;
+    top: 0;
+    position: absolute;
+}
+
+.img-loading {
+    background: url(http://static.juntu.com/images/mtload.gif) center center no-repeat;
+    min-height: 100px;
+}
+
+
+/*2016-2-17*/
+
+.jm-detail-header {
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    position: fixed;
+    top: -45px;
+    z-index: 1000;
+    transition: all .5s ease-in-out;
+    text-align: center;
+}
+
+.jm-detail-header .jm-detail-header-title {
+    opacity: 0;
+    transition: all .5s ease-in-out
+}
+
+.jm-detail-header-left_icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    left: 10px;
+    background-color: rgba(0, 0, 0, .5);
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    line-height: 35px;
+    text-align: center;
+    transition: all .5s ease-in-out
+}
+
+.jm-detail-header-left_icon i {
+    color: #fff;
+    font-size: 24px;
+}
+
+.jm-detail-right_icon-home-wapper {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background: rgba(0, 0, 0, .5);
+    border-radius: 50%;
+    transition: all .5s ease-in-out
+}
+
+.jm-detail-right_icon-home {
+    width: 23px;
+    height: 23px;
+    right: 6px;
+    display: inline-block;
+    position: absolute;
+    top: 6px;
+    background: url(../images/home-white.png) center center no-repeat;
+    -webkit-background-size: 23px;
+    background-size: 23px;
+    transition: all .5s ease-in-out
+}
+
+.jm-detail-header.active {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+.jm-detail-header.active .jm-detail-header-left_icon {
+    background: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    top: 0px;
+    left: 0px;
+}
+
+.jm-detail-header.active .jm-detail-header-left_icon i {
+    color: #39c3d0;
+    font-size: 30px;
+}
+
+.jm-detail-header.active .jm-detail-header-title {
+    opacity: 1
+}
+
+.jm-detail-header.active .jm-detail-right_icon-home-wapper {
+    background: none;
+}
+
+.jm-detail-header.active .jm-detail-right_icon-home {
+    background: url(/images/home.png) center center no-repeat;
+    -webkit-background-size: contain;
+    width: 25px;
+    height: 25px;
+    top: 5px;
+    right: 0px;
+}
+
+.jm-mt10 {
+    margin-top: 10px;
+}
+
+.jm-list-filter {
+    text-align: center;
+    background-color: #fff;
+    padding: 8px 0px;
+    border-bottom: 1px solid #c8c7cc;
+    color: #757575;
+    font-size: 14px;
+}
+
+.jm-list-filter span {
+    position: relative;
+    padding-right: 25px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 5px;
+    display: inline-block;
+    transition: all .5s ease-in-out;
+}
+
+.jm-list-filter span:after {
+    position: absolute;
+    line-height: 38px;
+    font-family: "iconfont" !important;
+    content: "\e661";
+    right: 5px;
+    top: 50%;
+    margin-top: -19px;
+    font-size: 18px;
+    color: #c7c7cc;
+}
+
+.jm-list-filter .active span {
+    background-color: #39c3d0;
+    border-radius: 5px;
+    color: #ffffff
+}
+
+.jm-list-filter .active span:after {
+    color: #ffffff;
+    content: "\e6de";
+}
+
+.jm-filter-info {
+    background-color: #fff;
+    height: 0px;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+    transform-origin: center top;
+}
+
+.jm-mark {
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: -1;
+    overflow: hidden;
+    display: none;
+}
+
+.jm-list-filter-wapper {
+    position: relative;
+    z-index: 3
+}
+
+.jm-filter-info li {
+    padding: 8px 25px;
+    border-bottom: 1px solid #c8c7cc;
+    font-size: 14px;
+    position: relative;
+}
+
+.jm-filter-info li.active {
+    color: #53c4d0
+}
+
+.jm-filter-info li.active:after {
+    position: absolute;
+    line-height: 38px;
+    font-family: "iconfont" !important;
+    content: "\e645";
+    right: 10px;
+    top: 50%;
+    margin-top: -19px;
+    font-size: 18px;
+    color: #53c4d0;
+}
+
+.jm-fix-top {
+    z-index: 1000;
+    top: 0
+}
+
+.jm-hide {
+    display: none !important;
+}
+
+.jm-filter-info-wapper {
+    position: absolute;
+    width: 100%;
+    top: 44px;
+}
+
+.jm-header-juntuApp-hide {
+    display: none;
+}
+
+.jm-list-data-loading {
+    background-color: #efeff4;
+    padding: 100px 0;
+}
+
+.jm-list-data-loading .jm-loading {
+    margin: 0 auto
+}
+
+.jm-disabled {
+    background-color: #b2b2b2 !important;
+    border-color: #b2b2b2 !important;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, #b2b2b2), to(#b2b2b2)) !important;
+    color: #fff !important;
+}
+
+#JTmake,
+.plug-icon-nav {
+    position: fixed
+}
+
+.show-head .navbar-home {
+    text-align: center;
+    line-height: 30px
+}
+
+.show-head .navbar-home a {
+    font-size: 18px
+}
+
+.show-head .navbar-home .glyphicon {
+    top: 0;
+    left: -1
+}
+
+.top-hide {
+    top: -50px
+}
+
+#JTmake {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: .5;
+    z-index: 1000;
+    display: none
+}
+
+.plug-icon-nav {
+    border-left: 1px solid transparent;
+    left: 0;
+    padding-left: 20px;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    bottom: 106px;
+    z-index: 1001
+}
+
+.plug-icon-nav-show {
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    padding-left: 0
+}
+
+.plug-icon-nav-show .plug-icon-home {
+    display: none
+}
+
+.plug-icon-home {
+    box-sizing: border-box;
+    border: 2px solid #fff;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background: url(http://s.juntu.com/statics/images/mobile/plug-icon.png) center -4px no-repeat #4dcdd9;
+    border-radius: 50%;
+    z-index: 1000;
+    -webkit-background-size: 40px auto;
+    background-size: 40px auto
+}
+
+.plug-icon-home-off {
+    background: url(http://s.juntu.com/statics/images/mobile/plug-icon.png) 5px -36px no-repeat #dfdfdf;
+    -webkit-background-size: 30px auto;
+    background-size: 30px auto;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    z-index: 1000;
+    top: 50%;
+    left: 50%;
+    margin-top: -20px;
+    margin-left: -20px
+}
+
+.plug-icon-nav-show .plug-icon-wapper {
+    opacity: 1;
+    -webkit-transform: translate(0, 0)scale(1);
+    pointer-events: auto;
+    -webkit-transition: all linear .2s
+}
+
+.plug-icon-wapper {
+    box-sizing: border-box;
+    position: absolute;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, .4);
+    z-index: 1100;
+    opacity: 0;
+    width: 250px;
+    top: 50%;
+    height: 250px;
+    left: 50%;
+    margin: -125px 0 0 -125px;
+    border-radius: 10px;
+    -webkit-transform: translate(-100px, 100px)scale(.2);
+    pointer-events: none
+}
+
+.plug-icon-wapper * {
+    box-sizing: border-box;
+}
+
+.plug-icon-item {
+    position: absolute;
+    text-align: center;
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.3;
+    color: #fff;
+    text-decoration: none!important;
+    background-image: url(http://static.juntu.com/mv2.0/images/fast-entry-2.png)
+}
+
+.plug-icon-item:hover,
+.plug-icon-item:active {
+    color: #fff!important;
+    text-decoration: none!important
+}
+
+.plug-icon-1 {
+    -webkit-transition: all linear .1s;
+    left: 17px;
+    top: 40px;
+    width: 58px;
+    background-position: 10px 0;
+    background-size: 200px auto;
+    padding-top: 45px
+}
+
+.plug-icon-4 {
+    top: 40px;
+    left: 91px;
+    width: 70px;
+    background-position: 17px -87px;
+    background-size: 200px auto;
+    padding-top: 46px;
+}
+
+.plug-icon-5 {
+    top: 40px;
+    left: 170px;
+    width: 70px;
+    background-position: 22px -166px;
+    background-size: 200px auto;
+    padding-top: 46px;
+}
+
+.plug-icon-1 {
+    height: 21px;
+    line-height: 21px;
+    -webkit-background-size: 200px auto
+}
+
+.plug-icon-2 {
+    height: 18px;
+    line-height: 18px;
+    -webkit-background-size: 200px auto
+}
+
+.plug-icon-2,
+.plug-icon-3,
+.plug-icon-6 {
+    background-size: 200px auto;
+    padding-top: 46px;
+    bottom: 54px;
+    width: 58px;
+    margin-top: -32px
+}
+
+.plug-icon-2 {
+    -webkit-transition: all linear .15s;
+    left: 94px;
+    background-position: -61px 0
+}
+
+.plug-icon-3 {
+    -webkit-transition: all linear .2s;
+    left: 17px;
+    background-position: -65px -87px
+}
+
+.plug-icon-6 {
+    -webkit-transition: all linear .15s;
+    right: 16px;
+    background-position: -61px -158px
+}
+
+.plug-icon-3,
+.plug-icon-4,
+.plug-icon-6,
+.plug-icon-5 {
+    height: 18px;
+    line-height: 18px;
+    -webkit-background-size: 200px auto
+}
+
+.plug-icon-wapper.plughide .plug-icon-1,
+.plug-icon-wapper.plughide .plug-icon-2,
+.plug-icon-wapper.plughide .plug-icon-3 {
+    opacity: 0;
+    -webkit-transform: translate(-50px, 50px)scale(.2);
+    pointer-events: none
+}
+
+.plug-icon-wapper.plugshow .plug-icon-1,
+.plug-icon-wapper.plugshow .plug-icon-2,
+.plug-icon-wapper.plugshow .plug-icon-3 {
+    opacity: 1;
+    -webkit-transform: translate(0, 0)scale(1);
+    pointer-events: auto
+}
+
+footer {
+    background-color: #f1f1f1;
+    padding: 2% 15px
+}
+
+footer a {
+    display: inline-block;
+    margin-right: 3%;
+    color: #666
+}
+
+footer p {
+    line-height: 2;
+    font-size: 12px;
+}
+
+.line {
+    border-bottom: 1px solid #ccc
+}
+
+.text-center {
+    text-align: center;
+}
+
+@media (max-width: 320px) {
+    .jm-filter-info li {
+        padding: 8px 15px;
+    }
+}
+
+
+/*===========================zk 420=======================================*/
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both
+}
+
+.clearfix {
+    zoom: 1
+}
+
+.clearit {
+    clear: both;
+    height: 0;
+    font-size: 0;
+    overflow: hidden
+}
+
+.jm-refund-progress {
+    text-align: center;
+    position: relative;
+    color: #B0AFAF;
+}
+
+.jm-refund-progress img {
+    width: 36px;
+    position: relative;
+    z-index: 9;
+}
+
+.jm-refund-progress::after {
+    background-color: #fff;
+    z-index: 1;
+}
+
+.jm-refund-progress-pass::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    display: block;
+    position: absolute;
+    top: 19px;
+    right: 50%;
+    background-color: #53C4D0!important;
+}
+
+.jm-refund-progress-pass {
+    color: #53C4D0;
+}
+
+.jm-refund-progress-fail {
+    color: #FC6208;
+}
+
+.jm-refund-progress-pass-first::after {
+    display: none;
+}
+
+.jm-refund-progress-fail::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    display: block;
+    position: absolute;
+    top: 19px;
+    right: 50%;
+    background-color: #FC6208!important;
+}
+
+.jm-refund-progress-default::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    display: block;
+    position: absolute;
+    top: 19px;
+    right: 50%;
+    background-color: #B0AFAF!important;
+}
+
+.jm-refund-progress-detail {
+    font-size: 12px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.jm-refund-progress-title {
+    padding-bottom: 15px;
+}
+
+.jm-refund-fail-reason-wrap {
+    background-color: #FC6208!important;
+    color: #fff;
+}
+
+.jm-refund-fail-reason-detail {
+    font-size: 12px;
+}
+
+.jm-refund-fail-reason-wrap h2 {
+        margin-bottom: 10px;
+    border-color: #fff;
+}
+
+.no-mg-b {
+    margin-bottom: 0!important;
+}
+
+
+/*current*/
+
+.jm-refund-check-reason-wrap {
+    color: #FF6600;
+    background-color: inherit!important;
+}
+
+.jm-refund-check-reason-wrap h2 {
+    text-align: center;
+    padding-top: 6px;
+}
+
+.jm-refund-check-reason-detail a {
+    color: #21B5F0;
+    font-size: 12px;
+}
+
+.arrow {
+    border-color: #21B5F0 transparent;
+    border-width: 6px;
+    border-style: solid;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    position: absolute;
+}
+
+.arrow-wrap {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    overflow: hidden;
+    position: relative;
+    vertical-align: middle;
+    right: -4px;
+}
+
+.arrow-top {
+    top: -50%;
+    border-color: transparent transparent #21B5F0 transparent
+}
+
+.arrow-bottom {
+    top: 50%;
+    border-color: #21B5F0 transparent transparent transparent;
+    margin-top: -4px;
+}
+
+.jm-whitespace {
+    padding-left: 15px;
+    padding-right: 15px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.jm-txt-justify-one {
+    text-align: justify;
+    overflow: hidden;
+    height: 24px;
+}
+.jm-txt-justify {
+    text-align: justify;
+}
+.jm-txt-justify-one:after {
+    display: inline-block;
+    content: '';
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+}

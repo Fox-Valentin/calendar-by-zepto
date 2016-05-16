@@ -1,0 +1,93 @@
+/*2016-02-16 begin*/
+.jm-ajax-detail{padding: 5px 10px; font-size: 14px; line-height: 20px;}
+.jm-detail-ticket-price-wapper{
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    width: 150px;
+    padding-right: 80px;
+    box-sizing: border-box;
+    margin-top: -28px; }
+.jm-detail-ticket-price-btn{width: 70px; position: absolute; right: 0px; text-align: center; top: 0px}
+.jm-detail-ticket-price-btn-text{
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #b2b2b2;
+    padding: 5px 0px;
+    font-size: 16px;
+    color: #fff;
+    display: block;
+    line-height: 1.0;}
+.jm-detail-ticket-price-btn-info{
+    border: 1px solid #b2b2b2;
+    display: block;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 3px 0px;
+    background-color: #fff;
+    width: 100%;
+    font-size: 14px;
+    box-sizing: border-box;
+    color: #b2b2b2;}
+.jm-detail-ticket-price-btn.active .jm-detail-ticket-price-btn-text{background-color: #ff9900;}
+.jm-detail-ticket-price-btn.active  .jm-detail-ticket-price-btn-info{color: #ff9900;border-color:#ff9900 }
+.jm-detail-ticket-price-jt{font-size: 24px; color: #ff6600;text-align: right; line-height: 1.0;}
+.jm-detail-ticket-price-mt{font-size: 14px; color: #757575;padding: 0px 5px; text-decoration: line-through; text-align: right;}
+.jm-detail-ticket-type{position: relative; padding-left: 40px;  padding-top: 10px; padding-bottom: 10px; background-color: #fff; padding-right: 30px; border-top: 1px solid #dfdfdf; border-bottom: 1px solid #dfdfdf;}
+.jm-detail-ticket-type:before{position: absolute; width: 20px; height: 18px;background: url(../images/qz-icon.png) -51px -70px no-repeat; content: "";-webkit-background-size: 170px;
+background-size: 170px; left: 15px; top: 50%; margin-top: -8px; }
+.jm-detail-ticket-type:after{position: absolute; line-height: 44px; font-family:"iconfont" !important; content: "\e661"; right: 15px; top: 50%; margin-top: -22px; font-size: 18px;  color: #c7c7cc;font-weight: bold;}
+.jm-detail-ticket-type.active:after{content: "\e6de";}
+.jm-detail-ticket-wapper{margin: 10px 0px;}
+.jm-detail-ticket-list{background-color: #f6f6f6; }
+.jm-detail-ticket-list li {padding: 8px 15px ; border-bottom: 1px solid #c8c7cc;}
+.jm-detail-ticket-info{
+    position: relative; 
+    padding-right: 150px; 
+    min-height: 60px;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-box-pack: center;}
+.jm-detail-ticket-tips{color: #ff9900;font-size: 14px;}
+.jm-detail-ticket-item-title{padding: 5px 0px;}
+.jm-detail-ticket-item-coupon span{padding: 2px 5px; background-color: #d9534f; color: #fff; font-size: 12px; border-radius: 3px;display: inline-block; margin-right: 2px;}
+.jm-detail-buy-tips{text-decoration: underline; color: #757575;font-size: 12px;}
+.jm-detail-special-info{padding-left: 25px;}
+.jm-detail-special-info:before{position: absolute; width: 20px; height: 18px;background: url(../images/qz-icon.png) -75px -70px no-repeat; content: "";-webkit-background-size: 170px;
+background-size: 170px; left: 0px; top: 50%; margin-top: -8px;}
+.jm-detail-special-info-text,.jm-detail-order-tips-info-text{font-size: 14px; color: #757575;display: block !important;}
+.jm-detail-order-tips-info{padding-left: 25px;}
+.jm-detail-order-tips-info:before {
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    margin-top: -20px;
+    line-height: 40px;
+    font-family: "iconfont" !important;
+    content: "\e691";
+    color: #c8c7cc;
+    font-size: 20px;
+}
+.jm-detail-order-tips-info-text {display: block !important; }
+.jm-detail-order-tips-info-text h3{color: #353535;font-size: 14px; padding: 8px 0px}
+.jm-detail-order-tips-info-text h3:first-child{margin-top: -10px;}
+.jm-detail-detail-info{padding-left: 25px;}
+.jm-detail-detail-info:before{position: absolute; width: 20px; height: 18px;background: url(../images/qz-icon.png) -103px -70px no-repeat; content: "";-webkit-background-size: 170px;
+background-size: 170px; left: 0px; top: 50%; margin-top: -8px;}
+.jm-ajax-order-tips-title {border-bottom: 1px solid #ccc; position: relative; padding: 10px 18px 10px 18px; padding-right: 30px; margin: -18px -18px 0px -18px}
+.jm-ajax-order-tips-title span{width: 30px; height: 45px; font-size: 30px; position: absolute; right: 10px; top: 50%;  text-align: center; margin-top: -25px; line-height: 45px;}
+.jm-ajax-order-tips-content{font-size: 14px; line-height:25px ;max-height: 215px; overflow: auto;}
+.jm-ajax-order-tips-content li{margin-bottom: 5px; padding-top: 5px;}
+.jm-ajax-order-tips-footer .jm-btn{background-image:-webkit-gradient(linear,left top,left bottom,color-stop(0.5,#f90),to(#f90)); color: #fff}
+.jm-ajax-order-tips-footer .jm-btn:not(.disabled):not(:disabled):active{color: #f90}
+.jm-ajax-order-tips-footer .jm-col:last-child{text-align: right;}
+.jm-ajax-order-tips-footer{border-top: 1px solid #ccc; position: relative; padding: 10px 18px 10px 18px;margin: 0px -18px -18px -18px;width: auto}
+.jm-ajax-order-tips-footer .jt-price{font-size: 14px;}
+.jm-ajax-order-tips-footer .jt-price i{color: #f90;}
+.jm-ajax-order-tips-footer .jt-price i em{font-size: 18px;}
+@media (max-width: 320px) {
+    .jm-detail-ticket-type {padding-left: 35px;}
+    .jm-detail-ticket-type:before{left: 10px}
+    .jm-detail-ticket-list li{padding:  5px 10px;}
+}

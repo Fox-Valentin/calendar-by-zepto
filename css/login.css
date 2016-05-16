@@ -1,0 +1,64 @@
+html,body{height: 100%}
+::-webkit-input-placeholder {
+    color: #757575;
+    text-indent: 0px;
+    font-size: 14px;
+}
+body {
+    background: url(../images/login-bg.jpg) top center no-repeat;
+     -webkit-background-size: 100% 100%;
+}
+
+.jm-list {
+    margin-bottom: 10px;
+}
+
+.jm__incon-home {
+    background: url(../images/home.png) center center no-repeat;
+    -webkit-background-size: contain;
+    width: 26px;
+    height: 26px;
+    top: 50%;
+    margin-top: -13px;
+    position: absolute;
+    right: 10px
+}
+.jm-weixin-img-wapper{text-align: center; margin-top: 10%;}
+.jm-weixin-img{width: 60px; height: 60px; border-radius: 50%;border: 2px solid #fff; box-shadow: 0px 2px 3px rgba(0,0,0,.5)}
+.jm-weixin-name{text-align: center; font-size: 16px; color: #fff; margin-top: 2%}
+.jm-weixin-tips{font-size: 16px; color: #fff;text-align: center; margin-top: 2%}
+.jm-weixin-btn-wapper {text-align: center;}
+.jm-weixin-btn{display: inline-block; padding: 5px 15px;border-radius: 5px;margin-top: 5%; margin-right: 20px}
+.jm-weixin-btn-esc{background-color: #c8c7cc; color: #fff}
+.jm-weixin-btn-ok{background-color: #ff9a5e; color: #ffffff;margin-right: 0px;}
+.jm-weixin-info {padding: 5% 10%;color: #fff;line-height: 25px;font-size: 14px; margin-top: 5%}
+.jm-weixin-info p{padding-left: 15px;}
+.jm-login-tab{border-bottom: 1px solid #fff; text-align: center; position: relative; z-index: 5}
+.jm-login-tab >li{display: inline-block; font-size: 16px; padding: 10px 10%;color: #ffffff;}
+.jm-login-tab >li.current{border-bottom: 2px solid #fff}
+ .jm-login-wapper{margin: 15px; background-color: #dfe1e6; border-radius: 5px;padding: 0px 10px; margin-bottom: 25px;}
+.jm-login-item{border-bottom: 1px solid #c8c7cc;height: 30px; padding: 10px 90px 10px 30px;position: relative;}
+.jm-login-item input{border: 0px;background: none; height: 30px; line-height: 30px; width: 100%;}
+.jm-login-icon-1:before{ position: absolute; width: 17px; height: 24px; content: '';left: 0px; background: url(../images/login-icon-1.png) 0 0 no-repeat;  -webkit-background-size: contain; top:50%; margin-top: -12px}
+.jm-login-icon-2:before{ position: absolute; width: 17px; height: 24px; content: '';left: 0px; background: url(../images/login-icon-2.png) 0 0 no-repeat;  -webkit-background-size: contain; top:50%; margin-top: -12px}
+.jm-login-icon-3:before{ position: absolute; width: 17px; height: 24px; content: '';left: 0px; background: url(../images/login-icon-3.png) 0 0 no-repeat;  -webkit-background-size: contain; top:50%; margin-top: -12px}
+.jm-login-icon-4:before{ position: absolute; width: 17px; height: 24px; content: '';left: 0px; background: url(../images/login-icon-4.png) 0 center no-repeat;  -webkit-background-size: contain; top:50%; margin-top: -12px}
+.jm-login-item:last-child{border-bottom: none;}
+.jm-msg-btn{font-size: 12px; background-color: #ababab; padding: 3px 5px;position: absolute; right: 10px; color: #f7f7f7;border-radius: 3px;top: 50%; margin-top: -13px;display: inline-block;}
+.jm-msg-btn.current{background-color: #ff9900; color: #fff}
+.jm-login-btn{display: block; background-color: #ff9900;border-radius: 3px;margin-left:15px; margin-right: 15px; text-align: center; padding: 8px 0px;font-size: 16px; color: #fff}
+.jm-login-tips{;margin-left:15px; margin-right: 15px; margin-top: 10px;}
+.jm-tab{width: 100%; overflow: hidden;}
+.ui-tab-content {
+    padding-top: 15px;
+    display: -webkit-box;
+}
+.ui-tab-content  .jm-login-wapper{margin-top: 0px;}
+.ui-tab-content>li {
+    -webkit-box-flex: 1;
+    width: 100%;
+}
+.jm-login-tips a{color:#fff}
+@media (max-width: 320px) {
+    .jm-login-tab >li{ padding: 8px 5%;}
+}

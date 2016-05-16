@@ -1,0 +1,188 @@
+body {
+    background-color: #efeff4;
+}
+
+.jm-pd50 {
+    padding-bottom: 50px;
+}
+
+.jm-order-title {
+    padding: 10px 15px;
+}
+
+.jm-li-title {
+    color: #757575
+}
+
+.jm-list {
+    margin-bottom: 10px;
+}
+
+.jm-sub-title {
+    font-size: 14px;
+    color: #757575;
+    padding: 8px 15px;
+}
+
+.jm-list-action {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    margin-top: -10px;
+    text-align: right;
+    width: 60%;
+}
+
+.jm-list-result-title {
+    width: 75px;
+    position: absolute;
+    text-align: left;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #757575;
+}
+
+.jm-list-result {
+    display: inline-block;
+    color: #353535;
+    padding-left: 80px;
+}
+
+.jm-type-group {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    margin-top: -15px;
+}
+
+.jm-ticket-type {
+    position: relative;
+    padding-right: 20px;
+}
+
+.jm-arrowlink .jm-list-action {
+    right: 30px;
+}
+
+.jm-order-totle {
+    height: 45px;
+    line-height: 45px;
+    background-color: #fcfcfc;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    border-top: #dcdcdc 1px solid;
+}
+
+.jm-order-totle-left {
+    width: 60%;
+    height: 45px;
+    display: block;
+    float: left;
+    text-align: center;
+    color: #353535;
+}
+
+.jm-order-totle-left span,
+.jm-order-price {
+    font-size: 20px;
+    color: #ff6600;
+}
+
+.jm-order-btn {
+    border: 0px;
+    background-color: #ff9900;
+    width: 40%;
+    height: 45px;
+    text-align: center;
+    float: left;
+    color: #ffffff;
+}
+
+.jm-order-btn.disabled {
+    background-color: #aaaaaa;
+}
+
+.jm-order-pay-tips {
+    color: #ff9900;
+    padding: 10px 15px;
+}
+
+.jm-sub-pay-title {
+    background-color: #ff9900;
+    line-height: 45px;
+    box-sizing: border-box;
+    padding-left: 15px;
+    color: #fff;
+}
+
+.jm-order-price {
+    margin-top: -15px;
+}
+.jm-price-style{color: #ff6600}
+
+
+
+@media (max-width: 320px) {
+    .jm-type-group,
+    .jm-list-action {
+        right: 10px;
+    }
+    .jm-sub-pay-title {
+        padding-left: 10px;
+    }
+    .jm-order-title,
+    .jm-order-pay-tips {
+        padding: 10px 10px;
+    }
+    .jm-sub-title {
+        padding: 8px 10px;
+    }
+    .jm-form-item input {
+        padding-right: 10px;
+    }
+}
+/*2016-04-18*/
+.jm-order-back {
+    height: 45px;
+    line-height: 45px;
+    background-color: #fcfcfc;
+  text-align: center;
+    border-top: #dcdcdc 1px solid;
+}
+.jm-order-back-btn{ background-color: #ff9900;
+    width: 80%;
+    height: 40px;
+    border-radius: 20px;
+    color: #ffffff;}
+.jm-order-li-db{display: block !important;}
+.jm-order-title-bottom{margin-top: 5px;}
+.jm-order-title-bottom span{font-size: 14px; color: #666}
+.jm-order-title-bottom span i{color: #333}
+.jm-order-back-price{float: right; color: #ff3300}
+.refund-succ-txt,.refund-fail-txt{    font-size: 10px;}
+.refund-choose-by-tao{
+        color: #FFA21B;
+    font-size: 12px;
+}
+.refund-detail-txt-align-l{text-align: left;}
+.color-f60{    color: #FF6600;}
+.color-f90{    color: #FF9900;}
+.refund-detail-check-btn-wrap{
+    background-color: #fff;
+    margin-top: -10px;
+    height: 45px;
+    line-height: 45px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.refund-detail-check-btn{
+        color: #26BDCB;
+    border-radius: 5px;
+    width: 80%;
+    height: 40px;
+    border: 2px solid #26BDCB;
+    background-color: #fff;
+}

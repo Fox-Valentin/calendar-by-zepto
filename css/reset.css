@@ -1,0 +1,241 @@
+/*CSS Reset*/
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+header,
+hgroup,
+nav,
+section,
+article,
+aside,
+footer,
+figure,
+figcaption,
+menu,
+button {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Microsoft YaHei", "微软雅黑", "SimSun", "宋体";
+    line-height: 1.5;
+    font-size: 16px;
+    color: #353535;
+    background-color: #fff;
+    -webkit-user-select: none;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    outline: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+caption,
+th {
+    text-align: left;
+}
+
+fieldset,
+img {
+    border: 0;
+}
+
+li {
+    list-style: none;
+}
+
+ins {
+    text-decoration: none;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+input,
+button,
+textarea,
+select,
+optgroup,
+option {
+    font-family: "Microsoft YaHei", "微软雅黑", "SimSun", "宋体";
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    outline: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none !important;
+    margin: 0;
+}
+
+button {
+    -webkit-appearance: none;
+    border: 0;
+    background: none;
+}
+
+a {
+    -webkit-touch-callout: none;
+    text-decoration: none;
+}
+
+:focus {
+    outline: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+
+em,
+i {
+    font-style: normal;
+}
+
+::-webkit-input-placeholder {
+    color: #e3e3e3;
+    text-indent: 5px;
+    font-size: 14px;
+}
+
+.pull-right {
+    float: right;
+}
+
+.pull-left {
+    float: left;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.ovh {
+    overflow: hidden;
+}
+.jm-margin-top-4{margin-top: 4px;}
+.jm-no-data {
+    background: url(../images/jm-no-data.png) no-repeat top center;
+    padding-top: 70px;
+    background-size: 60px;
+    text-align: center;
+    color: #b1b1b1;
+    margin-top: 35px;
+}
+
+.jm-pay-tips {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, .5);
+    text-align: right;
+}
+
+.jm-poptips {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 999;
+    padding: 0px 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.jm-poptips-cnt {
+    background-color: rgba(0, 0, 0, 0.6);
+    line-height: 40px;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.jm-poptips-cnt i {
+    display: inline-block;
+    width: 32px;
+    height: 1px;
+    vertical-align: top;
+}
+
+.jm-poptips-cnt i:before {
+    font-family: "iconfont" !important;
+    font-size: 25px;
+    line-height: 44px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    display: block;
+    color: rgba(0, 0, 0, 0.5);
+    margin-right: 10px;
+    margin-left: 4px;
+    color: #fff;
+    line-height: 40px;
+}
+.jm-poptips-info .jm-poptips-cnt {background-color: #ff0000 !important}
+.jm-poptips-info i:before {
+   content: "\e6e5";
+}
+
+.jm-poptips-success i:before {
+	content: "\e645";
+}
+
+.jm-poptips-warn i:before {
+   content: "\e646";
+}
+.pwstrength_viewport{
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 12px; color: #39c3d0}

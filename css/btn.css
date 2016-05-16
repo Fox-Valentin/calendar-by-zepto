@@ -1,0 +1,169 @@
+@charset "UTF-8";
+/**
+ * 按钮
+ */
+
+.jm-btn,
+.jm-btn-lg,
+.jm-btn-s {
+	height: 30px;
+	line-height: 30px;
+	padding: 0 11px;
+	min-width: 55px;
+	display: inline-block;
+	position: relative;
+	text-align: center;
+	font-size: 15px;
+	background-color: #fff;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, #fff), to(#fafafa));
+	vertical-align: top;
+	color: #353535;
+	-webkit-box-sizing: border-box;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	border: 1px solid #d1d0d4;
+	border-radius: 3px;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+	.jm-btn,
+	.jm-btn-lg,
+	.jm-btn-s {
+		position: relative;
+		border: 0;
+	}
+	.jm-btn:before,
+	.jm-btn-lg:before,
+	.jm-btn-s:before {
+		content: "";
+		width: 200%;
+		height: 200%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		border: 1px solid #cacccd;
+		-webkit-transform: scale(0.5);
+		-webkit-transform-origin: 0 0;
+		padding: 1px;
+		-webkit-box-sizing: border-box;
+		border-radius: 6px;
+		pointer-events: none;
+	}
+}
+.jm-btn:not(.disabled):not(:disabled):active,
+.jm-btn-lg:not(.disabled):not(:disabled):active,
+.jm-btn-s:not(.disabled):not(:disabled):active,
+.jm-btn.active,
+.active.jm-btn-lg,
+.active.jm-btn-s {
+	background: #f2f2f2;
+	color: #53c4d0;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+}
+.jm-btn:after,
+.jm-btn-lg:after,
+.jm-btn-s:after {
+	content: "";
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0;
+	right: 0;
+}
+.jm-btn-primary {
+	background-color: #18b4ed;
+	border-color: #0baae4;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, #1fbaf3), to(#18b4ed));
+	color: white;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+}
+.jm-btn-primary:not(.disabled):not(:disabled):active,
+.jm-btn-primary.active {
+	background: #1ca7da;
+	border-color: #1ca7da;
+	color: rgba(255, 255, 255, 0.5);
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+}
+.jm-btn-danger {
+	background-color: #ff9900;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, #ff9900), to(#ff9900));
+	color: white;
+	border-color: #f43d30;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+}
+.jm-btn-danger:not(.disabled):not(:disabled):active,
+.jm-btn-danger.active {
+	background: #ff6600;
+	border-color: #ff6600;
+	color: rgba(255, 255, 255, 0.5);
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+}
+.jm-btn.disabled,
+.disabled.jm-btn-lg,
+.disabled.jm-btn-s,
+.jm-btn:disabled,
+.jm-btn-lg:disabled,
+.jm-btn-s:disabled {
+	border: 0;
+	color: #ccc;
+	background: #e9ebec;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+}
+.jm-btn-lg {
+	font-size: 18px;
+	height: 44px;
+	line-height: 44px;
+	display: block;
+	width: 100%;
+	border-radius: 5px;
+}
+.jm-btn-wrap {
+	padding: 15px 10px;
+}
+@media (max-width: 320px) {
+	.jm-btn-wrap {
+		padding: 10px;
+	}
+}
+.jm-btn-s {
+	padding: 0;
+	width: 55px;
+	height: 25px;
+	line-height: 25px;
+	font-size: 13px;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+	.jm-btn-primary:before {
+		border: 1px solid #c8c7cc;
+	}
+	.jm-btn-danger:before {
+		border: 1px solid #f43d30;
+	}
+	.jm-btn,
+	.jm-btn-lg,
+	.jm-btn-s {
+		border: 0;
+	}
+	.jm-btn.disabled,
+	.disabled.jm-btn-lg,
+	.disabled.jm-btn-s,
+	.jm-btn:disabled,
+	.jm-btn-lg:disabled,
+	.jm-btn-s:disabled,
+	.jm-btn.disabled:before,
+	.disabled.jm-btn-lg:before,
+	.disabled.jm-btn-s:before,
+	.jm-btn:disabled:before,
+	.jm-btn-lg:disabled:before,
+	.jm-btn-s:disabled:before {
+		border: 1px solid #e9ebec;
+	}
+	.jm-btn-lg:before {
+		border-radius: 10px;
+	}
+}

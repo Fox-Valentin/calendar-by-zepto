@@ -1,0 +1,233 @@
+ h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    hr,
+    p,
+    blockquote,
+    dl,
+    dt,
+    dd,
+    ul,
+    ol,
+    li,
+    pre,
+    fieldset,
+    lengend,
+    button,
+    input,
+    textarea,
+    th,
+    td {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        font-size: 12px
+    }
+    
+    textarea {
+        resize: none;
+    }
+    
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    
+    i,
+    em {
+        font-style: normal;
+    }
+    
+    .clearfix:after {
+        content: ".";
+        display: block;
+        height: 0;
+        visibility: hidden;
+        clear: both;
+    }
+    
+    .clearfix {
+        zoom: 1;
+    }
+    
+    .clearit {
+        clear: both;
+        height: 0;
+        font-size: 0;
+        overflow: hidden;
+    }
+    
+    a {
+        color: #666;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        text-decoration: none;
+    }
+    
+    .pages-item-content {
+        padding-left: 150px;
+    }
+    
+ 
+    
+    .img-thumbnail {
+        width: 140px;
+        height: 85px;
+    }
+    
+    .page {
+        min-width: 320px;
+        max-width: 640px;
+        margin: 0 auto;
+        -webkit-background-size: 100% auto;
+        background-size: 100% auto;
+    }
+     
+    .page-banner img{width: 100%;}
+    
+    .pages-item {
+        margin:0% 2% 2% 2%;
+        display: block;
+        background-color: #fff;
+        padding: 2%;
+        width: 96%;
+    }
+    
+    .pages-item-pic {
+        width: 140px;
+        height: 110px;
+        float: left;
+        margin-right: 10px;
+        position: relative;
+    }
+    
+    .pages-item-pic img {
+        width: 140px;
+        height: 110px
+    }
+    
+    .pages-item-content h2 {
+        font-size: 14px;
+        overflow: hidden;
+        line-height: 1.2
+    }
+    
+    .page-item-btn {
+        padding: 5px 10px;
+        font-size: 14px;
+        background-color: #ff6600;
+        border-radius: 5px;
+        color: #fff;
+        display: inline-block;
+    }
+    
+    .page-item-btn-2 {
+        padding: 5px 10px;
+        font-size: 14px;
+        background-color: #999;
+        border-radius: 5px;
+        color: #fff;
+        display: inline-block;
+    }
+    
+    .pages-y-price span {
+        text-decoration: line-through;
+        color: #333333
+    }
+    
+    .pages-item-content p {
+        color: #999999
+    }
+    
+    .pages-price span {
+        font-size: 18px;
+        color: #ff6e0b;
+        font-weight: bold;
+    }
+    
+    .pages-price span i {
+        font-size: 12px;
+    }
+    
+    .page-z-bg-2 {
+        background-color: #0099cc;
+        position: relative;
+        padding-bottom: 10px
+    }
+    
+    .pages-item-pic-tag {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        padding: 2px 5px;
+        color: #ffffff;
+        background-color: #ed3b47;
+    }
+    .pages-item-pic-tag-2 {
+        width: 100%;
+        background-color: rgba(0, 0, 0, .5);
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        color: #fff;
+        text-align: center;
+    }
+   
+    .pt46 {
+        padding-top: 46px;
+    }
+    .text-center {
+        text-align: center;
+    }
+    .sp-buy-tips {
+        text-align: center;
+        font-size: 14px;
+        color: #fff;
+        padding-top: 10px
+    }
+    .pages-content {
+        padding-top: 1px;
+        padding-bottom: 1px;
+    }
+    .pages-title-item img{width: 100%;}
+    .pages-title-sub-item {
+    	background-position: center;
+        height: 40px;
+        text-align: center;
+        margin-bottom: 2%;
+    }
+    .pages-title-sub-item span {
+        display: inline-block;
+        height: 40px;
+        border-radius: 20px;
+        color: #ffee00;
+        background-color: #860af6;
+        padding: 0px 15px;
+        line-height: 40px;
+        font-size: 18px;
+    }
+    .pages-price-2 {
+        color: #e00712 !important;
+        font-size: 16px;
+    }
+    
+    .pages-price-2 i {
+        font-size: 24px;
+    }
+    .ce32222 {
+        color: #e32222 !important
+    }
+    .h34 {
+        height: 34px;
+    }
+    .footer-ad {
+        display: none;
+    }

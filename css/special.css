@@ -1,0 +1,612 @@
+::-webkit-input-placeholder {
+    color: #757575;
+    text-indent: 0px;
+    font-size: 14px;
+}
+
+.jm__incon-home {
+    background: url(../images/home.png) center center no-repeat;
+    -webkit-background-size: contain;
+    width: 26px;
+    height: 26px;
+    top: 50%;
+    margin-top: -13px;
+    position: absolute;
+    right: 10px
+}
+.jm-special-banner{position: relative;}
+.jm-special-part-title{vertical-align: bottom; overflow: hidden; line-height: 1.0}
+.jm-special-banner img,
+.jm-special-part-title img {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    vertical-align: bottom;
+}
+
+.jm-special-wapper {}
+
+.jm-special-part {
+    padding: 0 10px;
+    padding-bottom: 1px;
+}
+/*自定义内容区块样式*/
+.jm-special-item {
+    background-color: #fff;
+    padding: 10px;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+
+.jm-special-item:after,.jm-special-item-2:after {
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+.jm-special-item-title {
+    color: #000;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.jm-special-item-bottom {
+    position: relative;
+}
+
+
+.jm-special-btn {
+    background-color: #e0283e;
+    padding: 3px 8px;
+    display: inline-block;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 14px;
+    margin-top: 5px;
+    line-height: 1.5
+}
+
+.p-right {
+    position: absolute;
+    right: 0px;
+    top: 5px;
+}
+
+.jm-special-btn-price {
+    background-color: #e0283e;
+    padding: 5px 8px;
+    border-radius: 5px;
+    color: #ffffff;
+    display: inline-block;
+}
+
+.jm-special-item-2 {
+    background-color: #fff;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+.jm-special-item-2 img{border-top-left-radius:7px; ;border-top-right-radius:7px; }
+.jm-special-item-2 .jm-special-item-bottom{padding: 13px 10px;}
+.jm-special-item-2 .jm-special-item-title{padding: 5px 10px 10px 10px; border-bottom: 1px solid #dfdfdf}
+.jm-special-item-2 .p-right {right: 10px;top:8px;}
+.jm-special-item-2 .jm-special-btn-price{width: 100%;  box-sizing: border-box; text-align: center;}
+/*分类区块样式1*/
+
+.jm-special-item-img-big {
+    position: relative;
+    width: 100%;
+    margin-bottom: 5px;
+    height: 150px;
+    overflow: hidden;
+}
+
+.jm-special-item-img-big img.item-img {
+    width: 100%;
+    vertical-align: top;
+    min-height: 150px;
+}
+@media (min-width: 375px) {
+   .jm-special-item-img-big {
+    height: 180px;
+    }
+   .jm-special-item-img-big img.item-img {
+      margin-top: -10px
+    } 
+}
+
+/*分类区块样式2*/
+
+.jm-special-item-img-small {
+    width: 140px;
+    height: 110px;
+    float: left;
+    position: relative;
+    margin-right: 10px;
+}
+
+.jm-special-item-img-small img {
+    width: 140px;
+    height: 110px;
+}
+
+.jm-special-item-small-right {
+    padding-left: 150px;
+}
+
+
+/*图片左上tag样式*/
+
+.jm-special-item-left-tag-1 {
+    padding: 3px 5px;
+    background-color: #ff4400;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #ffffff;
+    font-size: 12px;
+}
+.jm-special-item-left-tag-2 {
+    padding: 3px 5px;
+    background-color: #ff4400;
+    position: absolute;
+    left: -5px;
+    top: 5px;
+    color: #ffffff;
+    font-size: 12px;
+    display: inline-block;
+}
+.jm-special-item-left-tag-2:after{
+    border-top: 5px solid #6d1d00;
+    position: absolute;
+    left: 0;
+    content: '';
+    display: block;
+ 
+    border-left: 5px solid transparent;
+    bottom: -5px;
+}
+.jm-special-item-left-tag-3 {
+    padding: 0px 5px;
+    height: 24px;
+    line-height: 24px;
+    background-color: #ff4400;
+    position: absolute;
+    left: 0px;
+    top: 5px;
+    color: #ffffff;
+    font-size: 12px;
+    display: inline-block;
+}
+.jm-special-item-left-tag-3:after{
+    border-left: 12px solid #ff4400;
+    position: absolute;
+    right: -12px;
+    top: 0;
+    content: '';
+    display: block;
+    border-bottom: 12px solid transparent;
+    border-top: 12px solid transparent;
+}
+.jm-special-item-left-tag-4 {
+    background:url(../images/special-tag-icon.png) no-repeat;
+    width: 40px;
+    height: 40px;
+    -webkit-background-size: contain;
+    border-radius: 50%;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 38px;
+    font-size: 12px;
+}
+/*图片右上tag样式*/
+
+.jm-special-item-right-tag-1 {
+    position: absolute;
+    max-width: 170px;
+    padding: 3px 10px;
+    background-color: rgba(0, 0, 0, .7);
+    right: 5px;
+    top: 5px;
+    color: #ffffff;
+    font-size: 12px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+/*图片底部tag样式*/
+
+.jm-special-item-bottom-tag-1 {
+    position: absolute;
+    width: 100%;
+    padding: 3px 10px;
+    background-color: rgba(0, 0, 0, .7);
+    left: 0;
+    bottom: 0px;
+    color: #ffffff;
+    font-size: 12px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+/*活动规则*/
+.jm-special-intro-btn{padding: 5px 8px; background-color: #e0283e; border-radius: 5px; color: #fff;position: absolute; top: 10px; right: 10px;}
+
+/*自定义标签*/
+
+
+.line-through {
+    text-decoration: line-through;
+}
+
+.font-sm {
+    font-size: 12px;
+}
+.font-lg{
+    font-size: 14px;
+}
+.font-big{font-size: 16px;}
+.font-bold {
+    font-weight: bold;
+}
+
+.jm-special-item-c-tag {
+    line-height: 1.5;
+    margin-bottom: 3px;
+    height: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #000
+}
+
+.jm-special-item-info {
+    font-size: 12px;
+    color: #737373;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #f2f2f2
+}
+
+.jm-special-item-price-no {
+    color: #a0a0a0;
+    font-size: 12px;
+}
+
+.txt-color-red {
+    color: #ff0000
+}
+
+.txt-color-grey {
+    color: #a3a3a3
+}
+.txt-color-black {
+    color: #333
+}
+.line-height-sm{line-height: 1.1}
+/*底部*/
+
+#JTmake,
+.plug-icon-nav {
+    position: fixed;
+}
+
+footer {
+    display: none;
+    background-color: #f1f1f1;
+    padding: 2% 15px;text-align: center;
+       font-size: 12px;
+}
+
+footer a {
+    display: inline-block;
+    margin-right: 3%;
+    color: #666;
+ 
+}
+
+footer p {
+    line-height: 2
+}
+
+.line {
+    border-bottom: 1px solid #ccc
+}
+
+#JTmake {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: .5;
+    z-index: 1000;
+    display: none
+}
+
+.plug-icon-nav {
+    border-left: 1px solid transparent;
+    left: 0;
+    padding-left: 20px;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    bottom: 106px;
+    z-index: 1001
+}
+
+.plug-icon-nav-show {
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    padding-left: 0
+}
+
+.plug-icon-nav-show .plug-icon-home {
+    display: none
+}
+
+.plug-icon-home {
+    box-sizing: border-box;
+    border: 2px solid #fff;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background: url(http://s.juntu.com/statics/images/mobile/plug-icon.png) center -4px no-repeat #4dcdd9;
+    border-radius: 50%;
+    z-index: 1000;
+    -webkit-background-size: 40px auto;
+    background-size: 40px auto
+}
+
+.plug-icon-home-off {
+    background: url(http://s.juntu.com/statics/images/mobile/plug-icon.png) 5px -36px no-repeat #dfdfdf;
+    -webkit-background-size: 30px auto;
+    background-size: 30px auto;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    z-index: 1000;
+    top: 50%;
+    left: 50%;
+    margin-top: -20px;
+    margin-left: -20px
+}
+
+.plug-icon-nav-show .plug-icon-wapper {
+    opacity: 1;
+    -webkit-transform: translate(0,0)scale(1);
+    pointer-events: auto;
+    -webkit-transition: all linear .2s
+}
+
+.plug-icon-wapper {
+        box-sizing: border-box;
+    position: absolute;
+    overflow: hidden;
+    background-color: rgba(0,0,0,.4);
+    z-index: 1100;
+    opacity: 0;
+     width: 250px;
+    top: 50%;
+    height: 250px;
+    left: 50%;
+    margin: -125px 0 0 -125px;
+    border-radius: 10px;
+    -webkit-transform: translate(-100px,100px)scale(.2);
+    pointer-events: none
+}
+.plug-icon-wapper *{
+    box-sizing: border-box;
+}
+.plug-icon-item {
+    position: absolute;
+    text-align: center;
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.3;
+    color: #fff;
+    text-decoration: none!important;
+    background-image: url(http://static.juntu.com/mv2.0/images/fast-entry-2.png)
+}
+
+.plug-icon-item:hover,.plug-icon-item:active {
+    color: #fff!important;
+    text-decoration: none!important
+}
+
+.plug-icon-1 {
+    -webkit-transition: all linear .1s;
+    left: 17px;
+    top: 40px;
+    width: 58px;
+    background-position: 10px 0;
+    background-size: 200px auto;
+    padding-top: 45px
+}
+
+
+.plug-icon-4 {
+    top: 40px;
+    left: 91px;
+    width: 70px;
+    background-position: 17px -87px;
+    background-size: 200px auto;
+    padding-top: 46px;
+}
+.plug-icon-5 {
+    top: 40px;
+    left: 170px;
+    width: 70px;
+    background-position: 22px -166px;
+    background-size: 200px auto;
+    padding-top: 46px;
+}
+.plug-icon-1
+{
+    height: 21px;
+    line-height: 21px;
+    -webkit-background-size: 200px auto
+}
+.plug-icon-2 {
+    height: 18px;
+    line-height: 18px;
+    -webkit-background-size: 200px auto
+}
+.plug-icon-2,
+.plug-icon-3,.plug-icon-6 {
+    background-size: 200px auto;
+    padding-top: 46px;
+     bottom:54px;
+    width: 58px;
+    margin-top: -32px
+}
+
+.plug-icon-2 {
+    -webkit-transition: all linear .15s;
+ 
+     left: 94px;
+    background-position: -61px 0
+}
+
+.plug-icon-3 {
+    -webkit-transition: all linear .2s;
+    
+   left: 17px;
+    background-position: -65px -87px
+}
+.plug-icon-6 {
+    -webkit-transition: all linear .15s;
+   right: 16px;
+    background-position: -61px -158px
+}
+.plug-icon-3,
+.plug-icon-4,.plug-icon-6,.plug-icon-5 {
+    height: 18px;
+    line-height: 18px;
+    -webkit-background-size: 200px auto
+}
+
+.plug-icon-wapper.plughide .plug-icon-1,
+.plug-icon-wapper.plughide .plug-icon-2,
+.plug-icon-wapper.plughide .plug-icon-3 {
+    opacity: 0;
+    -webkit-transform: translate(-50px, 50px)scale(.2);
+    pointer-events: none
+}
+
+.plug-icon-wapper.plugshow .plug-icon-1,
+.plug-icon-wapper.plugshow .plug-icon-2,
+.plug-icon-wapper.plugshow .plug-icon-3 {
+    opacity: 1;
+    -webkit-transform: translate(0, 0)scale(1);
+    pointer-events: auto
+}
+
+ .plug-icon-1 {
+    left: 50%;
+    top: 8px;
+    width: 58px;
+    height: 18px;
+    line-height: 18px;
+    margin-left: -29px;
+    background-position: 9px 0px;
+    -webkit-background-size: 200px auto;
+    background-size: 200px auto;
+    padding-top: 45px;
+}
+
+ .plug-icon-2 {
+    left: 8px;
+    top: 50%;
+    width: 58px;
+    height: 18px;
+    line-height: 18px;
+    background-position: -61px 0px;
+    -webkit-background-size: 200px auto;
+    background-size: 200px auto;
+    padding-top: 46px;
+    margin-top: -32px
+}
+
+ .plug-icon-3 {
+    right: 8px;
+    top: 50%;
+    width: 58px;
+    height: 18px;
+    line-height: 18px;
+    background-position: -61px -87px;
+    -webkit-background-size: 200px auto;
+    background-size: 200px auto;
+    padding-top: 46px;
+    margin-top: -32px
+}
+.plug-icon-4 {
+    bottom: 28px;
+    left: 50%;
+    width: 70px;
+    height: 18px;
+    line-height: 18px;
+    background-position: 17px -87px;
+    -webkit-background-size: 200px auto;
+    background-size: 200px auto;
+    padding-top: 46px;
+    margin-left: -35px;
+}
+/*2015-12-11*/
+.jm-special-item-zj{
+    display: block;
+    padding-bottom: 10px;
+}
+.jm-special-item-zj-title {height: 5px; background: url(http://static.juntu.com/dist/images/zj-title-bg.png) 0 -1px repeat-x; overflow: hidden;}
+.jm-special-item-zj-wapper{background-color: #fff; padding: 5px 10px;position: relative; line-height: 20px;}
+.jm-special-item-zj-wapper h1{color: #4866af}
+.jm-special-item-zj-wapper h2{color: #e84a6b}
+.jm-special-item-zj-price{position: absolute; right: 10px; top:15px;}
+.jm-special-item-zj-btn{display: block; padding: 5px; text-align: center; background-color: #e00f3b; color: #ffff00}
+.ce00f3b{color:#e00f3b}
+.font-bigger{font-size: 20px;}
+/*底部导航*/
+.nav-fix-bottom{position: fixed; width: 100%; left: 0px; bottom: 0px; height: 40px; background-repeat: repeat-x; -webkit-background-size: auto 40px;
+background-size: auto 40px;}
+.jm-main-nav {width: 100%; left: 0px; bottom: 0px; height: 40px;-webkit-background-size: auto 40px;
+background-size: auto 40px;}
+
+.nav-content {
+    display: -webkit-box;
+    width: 95%;
+    -webkit-box-sizing: border-box; height: 100%; margin: 0 auto}
+  .nav-content   li {
+    -webkit-box-flex: 1;
+    width: 100%;
+    text-align: center;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+}
+.nav-logo img{height: 35px;}
+.nav-content li a{display: block;  width: 100%; height: 40px; line-height: 40px; color: #fff;font-size: 14px;}
+.nav-content li a.nav-bottom-cur{color: #fff000; }

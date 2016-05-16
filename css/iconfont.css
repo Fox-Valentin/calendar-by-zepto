@@ -1,0 +1,158 @@
+
+@font-face {font-family: "iconfont";
+  src: url('http://static.juntu.com/mv2.0/font/iconfont.eot'); /* IE9*/
+  src: url('http://static.juntu.com/mv2.0/font/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('http://static.juntu.com/mv2.0/font/iconfont.woff') format('woff'), /* chrome、firefox */
+  url('http://static.juntu.com/mv2.0/font/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('http://static.juntu.com/mv2.0/font/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.jm-iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.jm-icon-check:before { content: "\e645"; }
+.jm-icon-close:before { content: "\e646"; }
+.jm-icon-unfold:before { content: "\e661"; }
+.jm-icon-right:before { content: "\e6a3"; }
+.jm-icon-back:before { content: "\e679"; }
+.jm-icon-question:before { content: "\e691"; }
+.jm-icon-add:before { content: "\e6da"; }
+.jm-icon-fold:before { content: "\e6de"; }
+.jm-icon-move:before { content: "\e754"; }
+.jm-icon-info:before { content: "\e6e5"; }
+.jm-icon-refresh:before { content: "\e6a4"; }
+.jm-icon-search:before { content: "\e65c"; }
+.jm-icon-location:before { content: "\e651"; }
+.jm-icon-roundright:before { content: "\e65b"; }
+.jm-icon-roundcheck:before { content: "\e657"; }
+.jm-icon-filter:before { content: "\e69c"; }
+.jm-icon-roundadd:before { content: "\e6d9"; }
+.jm-checkbox input:checked:before {
+	font-family: "iconfont" !important;
+	font-size: 18px;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+    content: "\e645";
+    color: #39c3d0;
+
+}
+.jm-radio input {
+    display: inline-block;
+    width: 24px;
+    height: 1px;
+    position: relative;
+    overflow: visible;
+    border: 0;
+    background: 0 0;
+    -webkit-appearance: none;
+    outline: 0;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+.jm-radio input:before {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #dfe0e1;
+    border-radius: 13px;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    position: absolute;
+    left: 0;
+    top: -14px;
+}
+.jm-radio input:checked:after {
+    content: '';
+    display: block;
+    width: 14px;
+    height: 14px;
+    background: #1cb7f0;
+    border-radius: 7px;
+    position: absolute;
+    left: 6px;
+    top: -8px;
+}
+.jm-calc-add:after {
+	font-family: "iconfont" !important;
+	font-size: 18px;
+	line-height: 28px;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	display: block;
+	color: #c8c8c8;
+	content: "\e6da";
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	top: 50%;
+	margin-top: -14px;
+}
+.jm-calc-minus:after {
+	font-family: "iconfont" !important;
+	font-size: 18px;
+	line-height: 28px;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	display: block;
+	color: #c8c8c8;
+	content: "\e754";
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	top: 50%;
+	margin-top: -14px;
+}
+.jm-list-link > li:after {
+  font-family: "iconfont" !important;
+  font-size: 22px;
+  line-height: 44px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  display: block;
+  color: rgba(0, 0, 0, 0.5);
+  color: #c7c7c7;
+  content: "\e6a3";
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  margin-top: -20px;
+  margin-right: -10px;
+}
+.jm-ticket-type:after {
+  font-family: "iconfont" !important;
+  font-size: 20px;
+  line-height: 44px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  display: block;
+  color: rgba(0, 0, 0, 0.5);
+  color: #c7c7c7;
+  content: "\e691";
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  margin-top: -22px;
+}
+.jm-arrowlink:before {
+  font-family: "iconfont" !important;
+  font-size: 22px;
+  line-height: 44px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  display: block;
+  color: rgba(0, 0, 0, 0.5);
+  color: #c7c7c7;
+  content: "\e6a3";
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  margin-top: -20px;
+  margin-right: -10px;
+}

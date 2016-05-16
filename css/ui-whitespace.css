@@ -1,0 +1,21 @@
+.jm-whitespace {
+    padding-left: 15px;
+    padding-right: 15px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.jm-txt-justify-one {
+    text-align: justify;
+    overflow: hidden;
+    height: 24px;
+}
+.jm-txt-justify {
+    text-align: justify;
+}
+.jm-txt-justify-one:after {
+    display: inline-block;
+    content: '';
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+}

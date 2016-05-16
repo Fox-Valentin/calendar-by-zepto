@@ -1,0 +1,273 @@
+section[data-id="1"] {
+    background: url(../../minisite/redclassic_2/page-1/bg.jpg) 0 bottom no-repeat;
+    background-size: 100% auto;
+}
+
+section[data-id="2"] {
+    background: url(../../minisite/redclassic_2/page-2/bg.jpg) 0 bottom no-repeat;
+    background-size: 100% auto;
+}
+
+section[data-id="3"],section[data-id="4"],section[data-id="5"],section[data-id="6"] {
+    background: url(../../minisite/redclassic_2/page-3/bg.jpg) 0 bottom no-repeat;
+    background-size: 100% auto;
+}
+
+
+
+section[data-id="7"]{
+    background: url(../../minisite/redclassic_2/page-7/bg.jpg) 0 bottom no-repeat;
+    background-size: 100% auto;
+}
+
+
+
+.ui-loading-white {
+     background-image: url(../../minisite/redclassic_2/page-1/img-1.png);
+    
+}
+.logo {
+    background: url(../../minisite/redclassic_2/page-1/img-1.png) 0 0 no-repeat;
+    width: 100px;
+    height: 100px;
+    -webkit-background-size: contain;
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    margin-left: -50px;
+}
+
+.page-1-img-2 {
+    background: url(../../minisite/redclassic_2/page-1/img-2.png) 0 0 no-repeat;
+    width: 270px;
+    height: 34px;
+    -webkit-background-size: contain;
+    position: absolute;
+    top: 45%;
+    margin-left: -135px;
+    left: 50%
+}
+
+.page-1-img-3 {
+    background: url(../../minisite/redclassic_2/page-1/img-3.png) 0 0 no-repeat;
+     width: 270px;
+    height: 18px;
+    -webkit-background-size: contain;
+    position: absolute;
+    top: 52%;
+    left: 50%;
+   margin-left: -135px;
+}
+
+
+.page-2-text {
+    padding: 25px;
+    position: relative;
+    z-index: 3;
+}
+
+.page-2-text h1 {
+    font-size: 45px;
+    font-family: "黑体";
+    color: #c10f12;
+    font-weight: bold;
+    margin: 0px;
+    margin-bottom: 20px;
+    margin-top: 20px
+}
+
+.page-2-text p {
+    margin: 0px;
+    font-size: 16px;
+    padding-right: 20px;
+    line-height: 30px;
+    text-shadow: 1px 1px 1px #fff;
+    font-weight: bold;
+}
+
+.page-3-img-2 {
+    width: 100%;
+    padding-top: 68%;
+    background: url(../../minisite/redclassic_2/page-3/img-1.png) 0 0 no-repeat;
+    -webkit-background-size: contain;
+}
+.page-4-img-2 {
+    width: 100%;
+    padding-top: 72%;
+    background: url(../../minisite/redclassic_2/page-4/img-1.png) 0 0 no-repeat;
+    -webkit-background-size: contain;
+    margin-top: 8%;
+
+}
+
+
+.page-5-img-1 {
+    width: 100%;
+     padding-top: 65%;
+    background: url(../../minisite/redclassic_2/page-5/img-1.png) center 0 no-repeat;
+    -webkit-background-size: contain;
+    margin-top: 8%;
+
+}
+.page-6-img-1 {
+    width: 100%;
+     padding-top: 65%;
+    background: url(../../minisite/redclassic_2/page-6/img-1.png) center 0 no-repeat;
+    -webkit-background-size: contain;
+   margin-top: 8%;
+}
+.page-3-content {
+    padding: 20px;
+    position: relative;
+    z-index: 5;
+}
+
+.page-3-content h2 {
+    margin: 0px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    font-size: 30px;
+    font-family: "黑体";
+    color: #fff;
+    font-weight: bold;
+}
+
+
+
+.pages-4-item {
+    border-left: 2px solid #ce9451;
+    padding-bottom: 17px;
+}
+
+.pages-4-item:first-child {
+    padding-top: 15px
+}
+
+.pages-4-item:last-child {
+    border-left: 2px solid transparent;
+}
+
+.pages-3-item p {
+    margin: 0px;
+    margin-top: 10px;
+    position: relative;
+    padding-left: 15px;
+    font-size: 16px;
+    line-height: 28px;
+    color: #ffffff;
+     font-weight: bold;
+}
+
+.pages-6-item p {
+    margin: 0px;
+    position: relative;
+    padding-left: 30px;
+    font-size: 16px;
+    line-height: 28px;
+    color: #ffffff;
+     font-weight: bold;
+}
+
+
+
+
+
+.page-12-title {
+    font-size: 20px;
+    color: #f1b000;
+    margin: 0px;
+    padding: 20px 0px 5px 20px;
+}
+
+.page-12-content {
+    margin: 10px 70px 20px 70px;
+    background-color: #82050a;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.page-12-content p {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color: #fff;
+    line-height: 30px
+}
+
+.page-12-content p strong {
+    color: #f1b000;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+
+
+.page-code {
+    width: 93%;
+  margin: 5px auto;
+  position: relative;
+}
+.page-code:after{
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+.page-code-item {
+    width: 170px;
+    float: left;
+    text-align: center;
+}
+.page-code p {
+    position: absolute; right: 0px;
+     top: 0px;
+    color: #fff;
+      line-height: 17px;
+      font-size:12px
+    
+ 
+}
+.text-center{text-align: center;}
+.text-center p{color: #ffffff}
+.link-bottom{
+    padding: 8px 10px;
+    background-color: #e1c623;
+    font-size: 20px;
+    color: #790a0c;
+    margin: 0 auto;
+    text-decoration: none;
+    border-radius: 6px;}
+.page-code img {
+    width: 170px;
+    margin-bottom:10px;
+}
+
+@media (max-width: 320px) {
+    .logo {
+        width: 100px;
+        height: 100px;
+        margin-left: -50px
+    }
+    .page-1-img-2 {
+    	  width: 230px;
+   	     height: 26px;
+   	     margin-left: -115px
+        
+    }
+    .page-1-img-3 {
+       width: 220px;
+   	    height: 15px;
+   	    margin-left: -115px
+
+    }
+   
+
+    .page-12-content{font-size: 12px;margin:10px 55px 20px 55px}
+    .page-12-content p{line-height: 25px}
+    .page-code p{line-height:14px;}
+     .page-code img {
+        width: 140px;
+    }
+    .page-code-item{width: 140px;}
+}

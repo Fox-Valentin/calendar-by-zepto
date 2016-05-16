@@ -1,0 +1,79 @@
+body{background-color: #efeff4; transition: all .5 ease-in-out}
+.jm__incon-home {
+    background: url(../images/home.png) center center no-repeat;
+    -webkit-background-size: contain;
+    width: 26px;
+    height: 26px;
+    top: 50%;
+    margin-top: -13px;
+    position: absolute;
+    right: 10px
+}
+.jm-qinzi-nav{padding: 20px 0px; background-color: #fff; border-bottom: 1px solid #dfdfdf}
+.jm-qinzi-nav li{
+    min-height: 69px;
+    -webkit-box-pack: center;
+    text-align: center; 
+    line-height: 1.0;}
+.jm-qinzi-nav li img{width: 50%}
+.jm-qinzi-nav li div{padding: 3px; font-size: 14px; }
+.jm-qinzi-wapper{background-color: #fff;border-top: 1px solid #dfdfdf;margin-top: 10px;}
+.jm-qinzi-hot-title{ padding: 10px 0px 10px 30px; position: relative; }
+.jm-qinzi-hot-title:before{position: absolute; height: 19px; width: 15px; background: url(../images/qz-icon.png) 0 0 no-repeat; content: "";-webkit-background-size: 170px;
+background-size: 170px; left: 0px;
+    left: 10px;
+    top: 50%;
+    margin-top: -8px;}
+.jm-qinzi-list-index-item{position: relative; line-height: 1.0; margin-bottom: 8px;}
+.jm-qinzi-list-index-item img{width: 100%}
+.jm-qinzi-list-wapper{padding: 8px 10px;}
+.jm-qinzi-list-title{line-height: 1.5; }
+.jm-qinzi-cover-subject{padding: 5px 10px; background-color: rgba(0,0,0,.7); color: #fff;position: absolute; left: 10px; top: 10px; border-radius: 15px;font-size: 12px;}
+.jm-qinzi-list-title-tips{display: inline-block; padding: 3px 2px; border: 1px solid #ff9900;border-radius: 2px;font-size: 12px; line-height: 1.0; color: #ff9900;margin-left: 10px;}
+.jm-qinzi-list-location{color: #757575; margin-top: 8px; font-size: 14px; position: relative; padding-left: 15px; line-height: 1.5}
+.jm-qinzi-list-location i{margin-right: 5px; font-size: 16px; position: absolute; left: 0px}
+.jm-qinzi-list-cover-bottom{position: absolute; width: 100% ;background: url(../images/qz-icon.png)  0 -23px repeat-x; left: 0px; bottom: 0px;  -webkit-background-size: 170px;
+background-size: 170px; padding:8px 10px; color: #fff;box-sizing: border-box;}
+.jm-qinzi-price{position: absolute; right: 0px; padding: 10px; background-color: #ff6600; font-size: 24px; color: #fff;bottom: 10px;border-top-left-radius: 5px; border-bottom-left-radius: 5px;}
+.jm-qinzi-price em{font-size: 12px; }
+.jm-qinzi-list-act-num{position: absolute; right: 0px; padding: 5px 15px; background-color: rgba(0,0,0,.5); font-size: 12px; color: #fff; bottom: 60px;border-top-left-radius: 10px; border-bottom-left-radius: 10px;}
+.jm-jm-qinzi-list-cover{position: relative; min-height: 160px; }
+.jm-detail-banner {width: 100%;height: 200px; background: #fff url(http://static.juntu.com/images/mtload.gif) center center no-repeat; position: relative;}
+.jm-detail-banner-img{width: 100%;height: 200px; -webkit-background-size:100% auto; background-size:100% auto; background-position: center center; background-repeat: no-repeat;}
+.jm-detail-banner-title{position: absolute; left: 0px; width: 100%; bottom: 0px; color: #fff;padding: 10px;font-size: 14px;}
+
+ .jm-detail-banner-title .jm-col:last-child{text-align: right} 
+ .jm-detail-banner-num{position: absolute; background: #ff9900; color: #fff;box-sizing: border-box; height: 30px;right: 0px; bottom: 40px; padding-right:3px; line-height: 30px; font-size: 14px; }
+ .jm-detail-banner-num:after{position: absolute; background:   url(../images/qz-icon.png) -159px -71px no-repeat; left: -11px; bottom: 0px;  -webkit-background-size: 170px;
+background-size: 170px;height: 30px; width: 12px; content: ""}
+.jm-qinzi-detail-title{line-height: 1.5;padding: 10px 10px; background-color: #fff;}
+.jm-qinzi-detail-join{padding: 8px 15px; border-top: 1px solid #dfdfdf; background-color: #fff;border-bottom: 1px solid #dfdfdf;}
+
+.jm-qinzi-detail-join-title{position: relative; padding-left:25px;}
+.jm-qinzi-detail-join-title:before{position: absolute; width: 17px; height: 17px;background: url(../images/qz-icon.png) 0 -75px no-repeat; content: "";-webkit-background-size: 180px;
+background-size: 180px; left: 0px; top: 50%; margin-top: -8px;}
+.jm-qinzi-detail-join-list{ padding: 5px 10px;height: 50px; overflow: hidden; box-sizing: border-box; }
+.jm-qinzi-detail-join-avatar{display: inline-block; width: 40px; height: 40px; border-radius: 50%; padding-left: 2px;}
+.jm-qinzi-detail-join-avatar img{width: 100%;height: 100%; border-radius: 50%}
+.jm-qinzi-detail-location{position: relative; padding-left: 25px; padding-right: 20px !importa;}
+.jm-qinzi-detail-location:first-child::before{ position: absolute; left: 0px;  top: 50%;
+  margin-top: -20px; line-height: 40px;  font-family:"iconfont" !important; content: "\e651";color: #c8c7cc;font-size: 20px;}
+  .jm-qinzi-detail-open-time,.jm-qinzi-detail-notice{position: relative; padding-left: 25px;}
+  .jm-qinzi-detail-open-time:before{position: absolute; width: 19px; height: 18px;background: url(../images/qz-icon.png) -24px -70px no-repeat; content: "";-webkit-background-size: 170px;
+background-size: 170px; left: 0px; top: 50%; margin-top: -9px; }
+.jm-qinzi-detail-notice:before{position: absolute; width: 17px; height: 17px;background: url(../images/qz-icon.png) 0px -102px no-repeat; content: "";-webkit-background-size: 170px;
+background-size: 170px; left: 0px; top: 50%; margin-top: -8px; }
+.jm-qinzi-cover-tripsay{position: absolute; width: 63px; height: 59px;background: url(../images/qz-icon.png) -106px -108px no-repeat; content: "";-webkit-background-size: 170px;
+background-size: 170px; left: 10px; top: -2%;}
+.jm-qinzi-tripsay-title-wapper{position: absolute; border: 3px solid rgba(255,255,255,.5); padding: 5px; left: 50%; top: 50%; margin-left: -25%; margin-top: -50px; height: 100px ;box-sizing: border-box; width: 50%; }
+.jm-qinzi-tripsay-title{background-color: rgba(255,255,255,.5); text-align: center; line-height: 20px; font-size: 14px; display: block;height: 100%; -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    padding: 10px;
+    box-sizing: border-box;}
+    .jm-qinzi-tripsay-title img{width: 8%; margin-top: 5px;}
+    
+@media (max-width: 320px) {
+   .jm-qinzi-detail-join{padding: 8px 10px;} 
+
+}

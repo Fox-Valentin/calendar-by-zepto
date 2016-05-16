@@ -1,0 +1,106 @@
+/*ticket*/
+            .jm-ticket-wrap{
+                    display: -webkit-box;
+                    width: 100%;
+            }
+            .jm-ticket-l{
+                    -webkit-box-flex: 2;
+                        border-right: 1px solid #C8C7CC;
+                            padding-right: 10px;
+            }
+            .jm-ticket-l-t,.jm-ticket-l-b{
+                padding-top: 6px;
+                padding-bottom: 6px;
+            }
+            .jm-ticket-r{
+                    -webkit-box-flex: 1;
+                    text-align: center;
+                    box-sizing: border-box;
+                    position:relative;
+                        padding: 22px 0;
+            }
+            .jm-ticket-l-title{
+                float: left;
+                    width: 70%;
+                overflow: hidden;
+                    font-size: 12px;
+            }
+            .jm-ticket-l-username{
+                    float: right;
+                    width: 30%;
+                    text-align: right;
+                    overflow: hidden;
+                        font-size: 12px;
+            }
+            .jm-ticket-l-num{
+                float: left;
+                    width: 70%;
+                overflow: hidden;
+                        font-size: 14px;
+            }
+            .jm-ticket-l-num-del{
+                text-decoration: line-through;
+            }
+            .jm-ticket-l-mount{
+                float: right;
+                width: 30%;
+                text-align: right;
+                overflow: hidden;
+                        font-size: 14px;
+            }
+            .jm-ticket-wrap{
+                            padding: 10px 15px 10px 20px;
+                    box-sizing: border-box;
+                        border: 1px solid #D2D1D5;
+                            border-radius: 5px;
+                            color: #757575;
+                            position: relative;
+            }
+            .jm-ticket-state{
+                        font-size: 16px;
+                font-weight: bold;
+            }
+            .half-circle-left{
+                    position: absolute;
+                    width: 20px;
+                    height: 20px;
+                    border: 1px solid #D2D1D5;
+                    border-radius: 50%;
+                    background-color: #fff;
+                    left: -10px;
+                    top: 50%;
+                    margin-top: -10px;
+            }
+            .half-circle-right{
+                    position: absolute;
+                width: 20px;
+                height: 20px;
+                border: 1px solid #D2D1D5;
+                border-radius: 50%;
+                background-color: #fff;
+                right: -10px;
+                top: 50%;
+                margin-top: -10px;
+            }
+            .jm-ticket{
+                    overflow: hidden;
+                    padding-right: 0;
+                    margin-right: 15px;
+                    position: relative;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    -webkit-box-align: center;
+            }
+            /*420*/
+            .jm-ticket-wrap-yel{
+                       border-color: #f90;
+                    color: #f90;
+            }
+            .jm-ticket-wrap-yel .half-circle-left{
+                       border-color: #f90;
+            }
+            
+            .jm-ticket-wrap-yel .half-circle-right,.jm-ticket-wrap-yel .jm-ticket-l{
+                       border-color: #f90;
+            }
+            /*ticket end*/

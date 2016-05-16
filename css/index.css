@@ -1,0 +1,205 @@
+body {
+    background-color: #efeff4;
+}
+.jm-inderx-header {
+    width: 100%;
+    font-size: 18px;
+    height: 45px;
+    color: #353535;
+    z-index: 10;
+  background-color: #fff;
+  position: relative;
+    -webkit-box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.jm-header-right_icon{
+    background: url(../images/index-top-icon.png) center center no-repeat;
+    -webkit-background-size:20px;
+
+}
+.jm-index-banner{overflow: hidden; min-height: 150px; position: relative;}
+.jm-index-type{background-color: #fff; padding-top: 5px;padding-bottom: 5px; border-bottom: 1px solid #dfdfdf}
+.jm-index-type a{color: #333;display: inline-block;}
+.jm-index-type:after,.jm-index-brand:after{ 
+    display: table;
+    content: " ";overflow: hidden; clear: both;}
+.jm-index-type li{
+    min-height: 69px;
+    -webkit-box-pack: center;
+    text-align: center;
+    line-height: 1; width: 25%; padding-top: 5px; color: #353535;padding-bottom: 5px;}
+.jm-index-type li img {
+   width: 50%;
+
+    height: auto;
+}
+.jm-index-type li div {
+    padding: 3px;
+    font-size: 12px;
+}
+.jm-index-brand{
+    background: #fff url(http://static.juntu.com/images/mtload.gif) no-repeat center center; min-height: 80px; border-bottom: 1px solid #eeeeee; margin-top: 10px;}
+.jm-index-brand > li{width: 50%;min-height:1px; line-height: 1;}
+
+.jm-index-brand > li img{
+     background-color: #fff;
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    border-right: 1px solid #fff;
+    vertical-align: bottom;
+    border-top: 1px solid #eeeeee;}
+.jm-index-brand > li:nth-child(odd) img{
+     border-right: 1px solid #eeeeee;   
+    }
+#jssor_1{min-height: 100px;}
+    .jssorb05 {
+        position: absolute;
+    }
+    .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        background: url(../images/b05.png) no-repeat;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    .jssorb05 div { background-position: -7px -7px; }
+    .jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
+    .jssorb05 .av { background-position: -67px -7px; }
+    .jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
+
+.jm-list {
+    margin-bottom: 10px;
+}
+.jm-inderx-search-bar{margin-right: 45px; margin-left: 45px; font-size: 14px; padding-top: 7px; }
+.jm-inderx-search-bar span{
+    padding: 5px 5px 5px 30px;
+    border-radius: 3px;
+    display: block;
+    background-color: #e6e6e6;
+    position: relative;
+    color: #a6a6a6;}
+.jm-inderx-search-bar span:after {
+    font-family: "iconfont" !important;
+    font-size: 18px;
+    line-height: 44px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    display: block;
+    color: rgba(0, 0, 0, 0.5);
+    color: #c7c7c7;
+    content: "\e65c";
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    margin-top: -20px;
+}
+.jm-header-left_logo {
+    position: absolute;
+    left: 4px;
+    display: block;
+    width: 35px;
+    height: 21px;
+    text-indent: -9999px;
+    top: 50%;
+    margin-top: -11px;
+}
+
+.jm-header-left_logo:before {
+    width: 35px;
+    height: 21px;
+    content: '';
+    position: absolute;
+    left: 0;
+    background: url(../images/head-logo.png) center center no-repeat;
+    -webkit-background-size: contain;
+    top: 0;
+}
+
+.uesr__index-banner img {
+    width: 100%;
+}
+
+.jm-index-recommend{margin-top: 15px; border-top: 1px solid #dfdfdf;}
+.jm-index-recommend-tab{
+    width: 100%;
+    background-color: #fff;
+    display: box;
+    display: -webkit-box;
+    font-size: 16px;
+    height: 37px;
+    -webkit-box-sizing: border-box;
+    z-index: 100;
+    box-sizing: border-box;
+    border-bottom: 1px solid #dfdfdf;
+}
+.jm-index-recommend-tab >li {
+    height: 37px;
+    line-height: 37px;
+    min-width: 70px;
+    box-flex: 1;
+    -webkit-box-flex: 1;
+    text-align: center;
+    color: gray;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.jm-index-recommend-tab >li.current span{border-bottom: 2px #00a5e0 solid; color: #00a5e0}
+.jm-index-recommend-tab >li span{display: inline-block; padding: 0 10px; height: 35px}
+.jm-index-rec {background-color: #fff;}
+.jm-index-rec li{float: none;   padding: 5px 10px;}
+.jm-index-recommend-list a{
+    position: relative;
+    display: block;
+    border-bottom: 1px solid #dfdfdf;
+    padding: 5px 0;
+}
+.jm-index-rec-pic{position: relative;}
+.jm-index-rec-pic img{max-width: 100%; vertical-align: bottom;
+    border-radius: 8px;}
+.jm-index-place-tag {
+    width: 65px;
+    height: 60px;
+    background: url(../images/index-flag.png)no-repeat;
+    position: absolute;
+    top: -3px;
+    left: 20px;
+    -webkit-background-size: 70px auto;
+    background-size: 70px auto;
+    text-align: center;
+    color: #fff;
+    font-size: 12px; 
+    padding-right: 5px;
+}
+.jm-index-rec-pic-title{
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .3);
+    right: 0;
+    left: 0;
+    font-weight: 700;
+    color: #fff;
+    padding: 8px 10px;
+    font-size: 15px;}
+.jm-index-place-tag span{display: block; font-size: 14px; margin-top: 8px;}
+.jm-index-rec-sub-title{
+    color: #757575;
+    font-size: 14px;
+    margin-bottom: 0;
+    line-height: 25px;
+    margin-top: 5px;}
+.jm-index-rec-price   {
+    text-align: right;
+    font-size: 21px;
+    color: #f60;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+.jm-index-rec-price span {
+    font-size: 12px;
+    color: #666;
+    padding-left: 5px;
+    font-weight: normal;
+}

@@ -1,0 +1,244 @@
+body {
+    background-color: #efeff4;
+}
+
+.jm-coupon_list {
+    padding: 20px 10px 15px 10px;
+    margin: 3% 10px 0px 10px;
+    box-sizing: border-box;
+    border: 1px solid #c8c7cc;
+    border-radius: 5px;
+}
+
+.jm-coupon_list>li {
+    padding: 0;
+    position: relative;
+    display: block;
+        box-sizing: border-box;
+    padding-left: 10px;
+}
+
+.jm-coupon_amount {
+    width: 100%;
+    display: block;
+    font-weight: bold;
+    padding-bottom: 6px;
+}
+.jm-coupon_amount span {
+    font-size: 40px;
+        display: inline-block;
+    vertical-align: -webkit-baseline-middle;
+        font-family: arial;
+            height: 40px;
+    line-height: 40px;
+}
+.jm-coupon_info{
+    -webkit-box-flex: 1;
+    box-flex: 1;
+    display: box;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: center;
+}
+.jm-coupon_info .jm-coupon_name,.jm-coupon_info>h2{font-size: 14px; }
+.jm-coupon_info .jm-coupon_time{font-size: 12px; }
+.jm-coupon_unused{background:#fff url(../images/coupon_bg.gif) center top repeat-x;  -webkit-background-size: 10px;}
+/*.jm-coupon_unused .jm-coupon_name,.jm-coupon_unused .jm-coupon_info>h2{ color: #53c4d0}*/
+.jm-coupon_unused .jm-coupon_time{ color: #757575}
+/*.jm-coupon_unused .jm-coupon_amount{  color: #53c4d0}*/
+.jm-coupon_used{background:#fff url(../images/coupon_bg_a.gif) center top repeat-x;   -webkit-background-size: 10px;}
+.jm-coupon_used .jm-coupon_name,.jm-coupon_used .jm-coupon_info>h2{ color: #757575}
+.jm-coupon_used .jm-coupon_time{ color: #757575}
+.jm-coupon_used .jm-coupon_amount{  color: #757575}
+.jm-coupon_tab_nav{
+    width: 100%;
+    background-color: #fff;
+    display: box;
+    display: -webkit-box;
+    font-size: 16px;
+    height: 37px;
+    -webkit-box-sizing: border-box;
+    z-index: 100;
+    box-sizing: border-box;}
+.jm-coupon_tab_nav>li {
+    height: 37px;
+    line-height: 37px;
+    min-width: 70px;
+    box-flex: 1;
+    -webkit-box-flex: 1;
+    text-align: center;
+    color: gray;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.jm-coupon_tab_nav li.current {
+    color: #00a5e0;
+    border-bottom: 2px #00a5e0 solid;
+}
+@media (max-width: 320px) {
+    .jm-block-list>li {
+        padding: 5% 10px 3% 10px;
+    }
+    .jm-block-group {
+        right: 15px;
+    }
+}
+/*zk add 5.4*/
+.jm-nowrap-flex {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    -webkit-box-flex: 1;
+    height: inherit;
+}
+.jm-scenic-hotel-single-unused-wrap,.jm-route-single-unused-wrap,.jm-hotel-single-unused-wrap,.jm-ticket-single-unused-wrap{
+    background: url(../images/scenic_hotel_one.png) center no-repeat;
+    background-size: 100%;
+    padding-left: 40px;
+        padding-right: 40px;
+        border:none;
+}
+.jm-route-single-unused-wrap{
+background: url(../images/route_one.png) center no-repeat;
+    background-size: 100%;
+}
+.jm-hotel-single-unused-wrap{
+background: url(../images/hotel_one.png) center no-repeat;
+    background-size: 100%;
+
+}
+.jm-ticket-single-unused-wrap{
+background: url(../images/ticket_one.png) center no-repeat;
+    background-size: 100%;
+
+}
+.jm-scenic-hotel-more-unused-wrap,.jm-route-more-unused-wrap,.jm-hotel-more-unused-wrap,.jm-ticket-more-unused-wrap{
+    background: url(../images/scenic_hotel_more.png) center no-repeat;
+    background-size: 100%;
+    padding-left: 40px;
+        padding-right: 40px;
+        border:none;
+            padding-bottom: 40px;
+}
+.jm-route-more-unused-wrap{
+    background: url(../images/route_more.png) center no-repeat;
+    background-size: 100%;
+}
+.jm-hotel-more-unused-wrap{
+    background: url(../images/hotel_more.png) center no-repeat;
+    background-size: 100%;
+}
+.jm-ticket-more-unused-wrap{
+        background: url(../images/ticket_more.png) center no-repeat;
+    background-size: 100%;
+}
+.jm-coupon_amount h2{
+        display: inline-block;
+    float: right;
+    width: 120px;
+}
+.jm-coupon_name{
+            display: inline-block;
+        float: right;
+        width: 120px;
+        font-size: 12px;
+        font-weight: normal;
+        text-overflow: ellipsis;
+        height: 22px;
+        overflow: hidden;
+}
+.jm-coupon-amount-top{
+float: left;
+}
+.jm-coupon-amount-bot{
+        float: right;
+    width: 120px;
+}
+.icon-scenic-hotel,.icon-route,.icon-hotel,.icon-ticket{
+    background: url(../images/scenic-hotel-icon.png) center no-repeat;
+    position:absolute;
+    left: -36px;
+    top: 50%;
+    margin-top: -20px;
+    padding-top: 40px;
+    width: 26px;
+    background-size: 100%;
+}
+.icon-route{
+    background: url(../images/route_icon.png) center no-repeat;
+    background-size: 100%;
+}
+.icon-hotel{
+    background: url(../images/hotel_icon.png) center no-repeat;
+    background-size: 100%;
+}
+.icon-ticket{
+    background: url(../images/ticket_icon.png) center no-repeat;
+    background-size: 100%;
+}
+
+.jm-coupon-num-wrap{
+    position: absolute;
+    right: -37px;
+    top: 50%;
+    margin-top: -22px;
+}
+.jm-coupon-num-title{
+        font-size: 12px;
+    width: 30px;
+    text-align: center;
+    color: #c8c7cc;
+}
+.jm-coupon-num{
+        width: 30px;
+    text-align: center;
+    font-family: arial;
+    font-size: 20px;
+}
+.jm-coupon-color-scenic-hotel{
+        color: #9991ff;
+}
+.jm-coupon-color-route{
+        color: #3fafee;
+}
+.jm-coupon-color-hotel{
+        color: #39c3d0;
+}
+
+.jm-coupon-color-ticket{
+        color: #ff6601;
+}
+@media (min-width: 375px){
+    .jm-coupon_amount {
+        width: 90%;
+    }
+     .jm-coupon-num-wrap{
+           right: -34px;
+    }
+    .jm-coupon_list>li{
+        padding-left: 40px;
+    }
+    .icon-scenic-hotel,.icon-route,.icon-hotel,.icon-ticket{
+        left: -33px;
+    }
+}
+
+.jm-scenic-hotel-more-used-wrap,.jm-route-more-used-wrap,.jm-hotel-more-used-wrap,.jm-ticket-more-used-wrap{
+    background: url(../images/invalid_more.png) center no-repeat;
+    background-size: 100%;
+    padding-left: 40px;
+        padding-right: 40px;
+        border:none;
+            padding-bottom: 40px;
+            color: #757575;
+}
+.jm-scenic-hotel-single-used-wrap,.jm-route-single-used-wrap,.jm-hotel-single-used-wrap,.jm-ticket-single-used-wrap{
+    background: url(../images/invalid_one.png) center no-repeat;
+    background-size: 100%;
+    padding-left: 40px;
+        padding-right: 40px;
+        border:none;
+        color: #757575;
+}

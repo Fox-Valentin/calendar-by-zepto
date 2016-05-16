@@ -1,0 +1,310 @@
+body {
+    background-color: #efeff4;
+}
+.jm-header-right_icon{
+    background: url(../images/index-top-icon.png) center center no-repeat;
+    -webkit-background-size:20px;
+
+}
+.jm-list {
+    margin-bottom: 10px;
+}
+
+.jm-header-left_user {
+    position: absolute;
+    left: 10px;
+    display: block;
+    padding-left: 55px;
+}
+
+.jm-header-left_user:before {
+    width: 50px;
+    height: 30px;
+    content: '';
+    position: absolute;
+    left: 0;
+    background: url(../images/logo.png) center center no-repeat;
+    -webkit-background-size: contain;
+    top: 50%;
+    margin-top: -15px;
+}
+
+.user__incon-phone {
+    background: url(../images/tel60.png) center center no-repeat;
+    -webkit-background-size: contain;
+    width: 30px;
+    height: 30px;
+    top: 50%;
+    margin-top: -15px;
+    position: absolute;
+    right: 10px
+}
+
+.uesr__index-banner img {
+    width: 100%;
+}
+
+.jm-block-list {
+    background: url(../images/user-bg-1.png) center bottom repeat-x;
+    -webkit-background-size: 16px;
+    width: 100%;
+    padding-bottom: 16px;
+}
+
+.jm-block-list>li {
+    padding: 10px 10px 13px 10px;
+    background-color: #fff;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.jm-block-list p {
+    font-size: 12px;
+    color: #757575;
+    margin-top: 5px;
+}
+
+.jm-block-list li>h2 {
+    margin-bottom: 10px;
+}
+
+.jm-block-group {
+    position: absolute;
+    right: 15px;
+    bottom: 5%
+}
+
+.jm-block-price {
+    font-size: 20px;
+    color: #ff6600;
+    display: block;
+    text-align: center;
+   
+}
+
+/*420*/
+
+.jm-refund-cancel-apply {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: inherit;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-top: #dcdcdc 1px solid;
+}
+
+.jm-refund-cancel-apply .jm-order-back-btn {
+    background-color: #fff;
+    color: #21B5F0;
+    border: 2px solid #21B5F0;
+}
+
+.refund-succ-txt {
+    color: #21B5F0;
+}
+
+.jm-refund-reason-num {
+    color: #353535;
+    font-size: 12px;
+    width: 75%;
+    overflow: hidden;
+}
+
+.jm-refund-reason-time {
+    color: #757575;
+    font-size: 12px;
+    width: 75%;
+    overflow: hidden;
+}
+
+.refund-fail-txt {
+    color: #f90;
+}
+
+.jm-refund-succ-apply {
+        padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: inherit;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-top: #dcdcdc 1px solid;
+}
+
+.jm-refund-succ-apply .jm-order-back-btn {
+    background-color: #fff;
+    color: #f90;
+    border: 2px solid #f90;
+}
+/*422 zk*/
+.jm-avatar>span {
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -webkit-border-radius: 200px;
+}
+.jm-avatar {
+        display: block;
+    width: 56px;
+    height: 56px;
+    -webkit-border-radius: 200px;
+    overflow: hidden;
+}
+.jm-list .jm-avatar, .jm-list .jm-avatar-s, .jm-list .jm-avatar-lg{
+        margin: 10px 10px 10px 0;
+}
+.jm-balance-num{
+    font-size: 30px;
+    vertical-align: baseline;
+}
+.jm-balance-num-wrap{
+        color: #757575;
+    border-top: 1px solid #ddd;
+}
+.jm-balance-desc{
+        color: #757575;
+    line-height: 26px;
+    font-size: 14px;
+}
+.jm-txt-tips{
+        font-size: 12px;
+}
+.jm-txt-muted{
+        color: #bbb;
+}
+
+.jm-placehold-wrap {
+    padding-top: 31.25%;
+    position: relative;
+}
+.jm-placehold {
+    color: #bbb;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    -webkit-box-sizing: border-box;
+    text-align: center;
+    height: 100%;
+    z-index: -1;
+}
+.color-dark-green{
+    color:#53C4D0
+}
+.jm-pwd-ok-mark{
+    vertical-align: text-bottom;
+    width: 20px;
+    height: 20px;
+}
+.jm-nowrap {
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.jm-avatar2{
+    display: block;
+    width: 40px;
+    height: 40px;
+    -webkit-border-radius: 200px;
+    overflow: hidden;
+}
+.jm-avatar2>span {
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -webkit-border-radius: 200px;
+}
+.jm-list .jm-avatar2, .jm-list .jm-avatar2-s, .jm-list .jm-avatar2-lg {
+    margin: 10px 10px 10px 0;
+}
+.color-fund-detail-light-green{
+    color:#81CC36;
+}
+.jm-label {
+    display: inline-block;
+    line-height: 30px;
+    height: 30px;
+    padding: 0 15px;
+    border: 1px solid #cacccd;
+    border-radius: 5px;
+}
+.jm-center {
+    width: 100%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    text-align: center;
+    height: 150px;
+}
+.jm-footer~.jm-container {
+    border-bottom: 56px solid transparent;
+}
+.no-pad{padding:0!important;}
+.no-margin{margin:0!important;}
+.no-background{background:none!important;}
+.no-border{border:none!important;}
+.jm-pwd-input{
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;    text-align: center;
+    border: 1px solid #757575;
+     border-right-color: transparent;
+}
+@media (max-width: 320px) {
+    .jm-pwd-input{
+        width: 100%;
+        height: 40px;
+        box-sizing: border-box;
+            text-align: center;
+            border: 1px solid #757575;
+            border-right-color: transparent;
+    }
+        .jm-pwd-input-last{
+            border-right-color: #757575;
+        }
+}
+.jm-pwd-input-last{
+    border-right-color: #757575;
+}
+.jm-pwd-title{
+    padding: 15px 0;color: #757575;
+}
+.jm-pay-pwd-title{
+    color:#353535;
+}
+/*4/23*/
+::-webkit-input-placeholder {
+    color: #757575;
+    text-indent: 0px;
+    font-size: 14px;
+}
+ .jm-user-center-wapper{margin: 15px 10px 0px 10px; background-color: #dfe1e6; border-radius: 5px;padding: 0px 10px; }
+.jm-user-center-item{border-bottom: 1px solid #c8c7cc;height: 30px; padding: 10px 90px 10px 30px;position: relative;}
+.jm-user-center-item input{border: 0px;background: none; height: 30px; line-height: 30px; width: 100%;}
+.jm-user-center-icon-1:before{ position: absolute; width: 17px; height: 24px; content: '';left: 0px; background: url(../images/login-icon-1.png) 0 0 no-repeat;  -webkit-background-size: contain; top:50%; margin-top: -12px}
+.jm-user-center-icon-2:before{ position: absolute; width: 17px; height: 24px; content: '';left: 0px; background: url(../images/login-icon-2.png) 0 0 no-repeat;  -webkit-background-size: contain; top:50%; margin-top: -12px}
+.jm-user-center-icon-3:before{ position: absolute; width: 17px; height: 24px; content: '';left: 0px; background: url(../images/login-icon-3.png) 0 0 no-repeat;  -webkit-background-size: contain; top:50%; margin-top: -12px}
+.jm-user-center-icon-4:before{ position: absolute; width: 17px; height: 24px; content: '';left: 0px; background: url(../images/login-icon-4.png) 0 center no-repeat;  -webkit-background-size: contain; top:50%; margin-top: -12px}
+.jm-user-center-item:last-child{border-bottom: none;}
+.jm-user-center-btn{display: block; background-color: #ff9900;border-radius: 3px;margin-left:15px; margin-right: 15px; text-align: center; padding: 8px 0px;font-size: 16px; color: #fff}
+
+@media (max-width: 320px) {
+    .jm-block-list>li {
+        padding: 10px 10px 13px 10px;
+    }
+    .jm-block-group{right: 15px;}
+
+}

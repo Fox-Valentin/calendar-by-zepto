@@ -1,0 +1,89 @@
+body {
+    background-color: #efeff4;
+}
+
+.jm-list {
+    margin-bottom: 10px;
+}
+
+.jm-header-left_user {
+    position: absolute;
+    left: 10px;
+    display: block;
+    padding-left: 55px;
+}
+
+.jm-header-left_user:before {
+    width: 50px;
+    height: 30px;
+    content: '';
+    position: absolute;
+    left: 0;
+    background: url(../images/logo.png) center center no-repeat;
+    -webkit-background-size: contain;
+    top: 50%;
+    margin-top: -15px;
+}
+
+.user__incon-phone {
+    background: url(../images/tel60.png) center center no-repeat;
+    -webkit-background-size: contain;
+    width: 30px;
+    height: 30px;
+    top: 50%;
+    margin-top: -15px;
+    position: absolute;
+    right: 10px
+}
+
+.uesr__index-banner img {
+    width: 100%;
+}
+
+.jm-block-list {
+    background: url(../images/user-bg-1.png) center bottom repeat-x;
+    -webkit-background-size: 16px;
+    width: 100%;
+    padding-bottom: 16px;
+}
+
+.jm-block-list>li {
+    padding: 5% 15px 3% 15px;
+    background-color: #fff;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.jm-block-list p {
+    font-size: 12px;
+    color: #757575;
+    margin-top: 5px;
+}
+
+.jm-block-list li>h2 {
+    margin-bottom: 10px;
+}
+
+.jm-block-group {
+    position: absolute;
+    right: 15px;
+    bottom: 5%
+}
+
+.jm-block-price {
+    font-size: 20px;
+    color: #ff6600;
+    display: block;
+    text-align: center;
+   
+}
+
+
+@media (max-width: 320px) {
+    .jm-block-list>li {
+        padding: 5% 10px 3% 10px;
+    }
+    .jm-block-group{right: 15px;}
+
+}

@@ -1,0 +1,64 @@
+/*zk flex 422*/
+.jm-flex {
+    min-height: 80px;
+    margin-bottom: 10px;
+}
+.jm-flex-ver {
+    -webkit-box-orient: vertical;
+}
+.jm-flex, .jm-tiled {
+    display: -webkit-box;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+}
+.jm-flex-pack-start {
+    -webkit-box-pack: start;
+}
+.jm-flex-pack-center {
+    -webkit-box-pack: center;
+}
+
+.jm-flex-pack-end {
+    -webkit-box-pack: end;
+}
+
+.jm-flex-align-start {
+    -webkit-box-align: start;
+}
+.jm-flex-align-center {
+    -webkit-box-align: center;
+}
+
+.jm-flex-align-end {
+    -webkit-box-align: end;
+}
+.jm-flex-ver {
+    min-height: 80px;
+    margin-bottom: 10px;
+}
+.jm-flex-align-center {
+    -webkit-box-align: center;
+}
+.jm-col {
+    float: left;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+}
+.jm-col {
+    padding: 5px;
+    background: #777;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+}
+.jm-row-flex .jm-col {
+    float: none;
+    -webkit-box-flex: 1;
+    width: 0;
+}
+.jm-row-flex {
+    display: -webkit-box;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+}

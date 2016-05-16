@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="zh-cn">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>骏途旅游网_西安旅游_旅游线路_景点门票_酒店预订</title>
+		<meta name="keywords" content="西安旅游,旅游线路,景点门票,酒店预订,骏途旅游网,骏途网">
+		<meta name="description" content="骏途旅游网-陕西领先的在线旅游预订平台,为广大用户提供周边旅游,景点门票,酒店预订,自驾游,国内游,出境旅游线路等预订服务,更专业,品质有保证,让您旅游更安心。">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/iconfont.css" />
+		<link rel="stylesheet" href="css/layout.css" />
+		<link rel="stylesheet" href="css/list.css" />
+		<link rel="stylesheet" href="css/btn.css" />
+		<link rel="stylesheet" href="css/calc.css" />
+		<link rel="stylesheet" href="css/order.css" />
+		<script type="text/javascript" src="js/lib/zepto.js" ></script>
+		<script type="text/javascript" src="js/lib/tap.js" ></script>
+		<script type="text/javascript" src="js/lib/core.js" ></script>
+		<script type="text/javascript" src="js/spinner.js" ></script>
+		<script type="text/javascript" src="js/app.js" ></script>
+		<script type="text/javascript" src="js/scenic-order.js" ></script>
+	    <link rel="stylesheet" type="text/css" href="calendar.css">
+	    <script src="calendar.js"></script>
+		<style>
+		.jm-list-action-l{	
+			    width: 100%;
+		}
+		.jm-form-item .jm-list-action-l input{
+			text-align: left;
+		}
+		.jm-date-start{
+			    width: 30%;
+    			float: left;
+		}
+		.jm-date-end{
+			       float: right;
+    			width: 30%;
+		}
+		.day-count{
+			    box-sizing: border-box;
+			    width: 60px;
+			    height: 40px;
+			    border-radius: 50%;
+			    text-align: center;
+			    line-height: 40px;
+			    font-size: 14px;
+			    position: absolute;
+			    right: -48px;
+			    top: 50%;
+			    margin-top: -10px;
+			    background-color: #fff;
+		}
+		.day-count em{
+				    display: inline-block;
+			    border: 1px solid #e0e0e0;
+			    border-radius: 50%;
+			    width: 40px;
+			    height: 40px;
+		}
+		.jm-list-date{
+			    position: absolute;
+    		top: 18px;
+		}
+		.jm-date-start-title,.jm-date-end-title{
+				position: relative;
+			    top: -12px;
+			    font-size: 10px;
+		}
+		.jm-order-btn-wrap{
+			background-color: #fff;
+		}
+		@media (max-width: 320px){
+			.jm-date-start{
+				    width: 27%;
+			}
+			.jm-date-end{
+	    			width: 27%;
+			}
+
+		}
+		</style>
+	</head>
+
+	<body>
+		<header class="jm-header">
+			<a href="#" class="jm-header-left_icon"><i class="jm-iconfont">&#xe679;</i></a>
+			<span>门票订单</span>
+			<a href="#" class="jm-header-right_icon"></a>
+		</header>
+		<section class="jm-pd50">
+			<ul class="jm-list jm-list-text jm-list-active jm-list-cover  jm-list-link  jm-border-tb clearfix" style="margin-bottom:0;">
+				<li class="jm-border-t jm-arrowlink">
+					<span class="jm-li-title">目的地</span>
+					<div class="jm-list-action">
+						西安
+					</div>
+				</li>
+			</ul>
+			<ul class="jm-list jm-list-text jm-list-active jm-list-cover  jm-list-link clearfix"  style="margin-bottom:0;">
+				<li class="jm-border-t jm-form-item jm-date-start">
+					<span class="jm-li-title  jm-date-start-title">入住</span>
+					<div class="jm-list-action-l  jm-list-date">
+						<input type="text" class="date-start" readonly="readonly" data-start="">
+					</div>
+						<div class="day-count"><em><font id="day-count">33</font>天</em></div>
+				</li>
+				<li class="jm-form-item jm-date-end">
+					<span class="jm-li-title jm-date-end-title">离店</span>
+					<div class="jm-list-action-l jm-list-date">
+						<input type="text" class="date-end" readonly="readonly" data-end="">
+					</div>
+				</li>
+			</ul>
+			<ul class="jm-list jm-list-text jm-list-active jm-list-cover  jm-list-link jm-border-tb clearfix"  style="margin-bottom:0;">
+				<li class="jm-border-t jm-form-item">
+					<span class="jm-li-title"> &nbsp;</span>
+					<div class="jm-list-action-l">
+						<input type="text" placeholder="关键字、位置、品牌、酒店名">
+					</div>
+
+				</li>
+				<li class="jm-border-t jm-form-item">
+					<span class="jm-li-title">&nbsp;</span>
+					<div class="jm-list-action-l">
+						<input type="number" placeholder="价格，星级">
+					</div>
+				</li>
+			</ul>
+			<div class="jm-btn-wrap jm-order-btn-wrap">
+			    <button class="jm-btn-lg  jm-btn-danger">
+			        查询
+			    </button>
+			</div>
+		</section>
+		<script type="text/javascript">
+
+		$(document).ready(function() {
+			var $date_start = $('.date-start');
+			var $date_end = $('.date-end');
+			var now = new Date();
+			$date_start.val(now.getFullYear()+'-'+(now.getMonth()+1) + '-' + now.getDate())
+			$date_end.val(now.getFullYear()+'-'+(now.getMonth()+1) + '-' + (now.getDate()+1))
+			var $day_count = $('#day-count')
+
+			var options = {
+	            jm_datepicker_wrap : $('body'),
+	            month_num : 5,
+	            ajax_url : 'data.php',
+	            start_date : $date_start,
+	            end_date : $date_end,
+	            day_count : $day_count
+	        };
+			$date_start.on('tap', function(event) {
+				if($('.calendar-body').size() > 0) return false;
+				event.preventDefault();
+				$date_start.jm_calendar(options);
+			});
+			$date_end.on('tap', function(event) {
+				if($('.calendar-body').size() > 0) return false;
+				event.preventDefault();
+				$date_end.jm_calendar(options);
+				
+			});
+
+		        
+		});
+		</script>
+	</body>
+
+</html>

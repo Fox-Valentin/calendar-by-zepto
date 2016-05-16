@@ -1,0 +1,490 @@
+section[data-id="1"] {
+    background: url(../../minisite/redclassic/page-1/bg.jpg) 0 bottom no-repeat;
+    background-size: 100% auto;
+}
+
+section[data-id="2"] {
+    background: url(../../minisite/redclassic/page-2/bg.jpg) 0 bottom no-repeat;
+    background-size: 100% auto;
+}
+
+section[data-id="3"] {
+    background: url(../../minisite/redclassic/page-3/bg.jpg) 0 bottom no-repeat;
+    background-size: 100% auto;
+}
+
+section[data-id="4"] {
+    background: url(../../minisite/redclassic/page-3/bg.jpg) 0 bottom no-repeat;
+    background-size: 100% auto;
+}
+
+section[data-id="5"] {
+    background: url(../../minisite/redclassic/page-4/bg.jpg) 0 bottom no-repeat;
+    background-size: 100% auto;
+}
+
+section[data-id="6"],
+section[data-id="7"],
+section[data-id="8"],
+section[data-id="9"],
+section[data-id="10"],
+section[data-id="11"] {
+    background: url(../../minisite/redclassic/page-5/bg.jpg) 0 bottom no-repeat;
+    background-size: 100% auto;
+}
+
+section[data-id="12"] {
+    background: url(../../minisite/redclassic/page-11/bg.jpg) 0 bottom no-repeat;
+    background-size: 100% auto;
+}
+
+.ui-loading-white {
+     background-image: url(../../minisite/redclassic/page-1/img-1.png);
+    
+}
+.logo {
+    background: url(../../minisite/redclassic/page-1/img-1.png) 0 0 no-repeat;
+    width: 100px;
+    height: 100px;
+    -webkit-background-size: contain;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    margin-left: -50px;
+}
+
+.page-1-img-2 {
+    background: url(../../minisite/redclassic/page-1/img-2.png) 0 0 no-repeat;
+    width: 120px;
+    height: 345px;
+    -webkit-background-size: contain;
+    position: absolute;
+    top: 25%;
+    left: 53%;
+    margin-left: -50px;
+}
+
+.page-1-img-3 {
+    background: url(../../minisite/redclassic/page-1/img-3.png) 0 0 no-repeat;
+    width: 23px;
+    height: 280px;
+    -webkit-background-size: contain;
+    position: absolute;
+    top: 28%;
+    left: 42%;
+    margin-left: -50px;
+}
+
+
+
+.page-2-text {
+    padding: 25px;
+    position: relative;
+    z-index: 3;
+}
+
+.page-2-text h1 {
+    font-size: 45px;
+    font-family: "黑体";
+    color: #c10f12;
+    font-weight: bold;
+    margin: 0px;
+    margin-bottom: 20px;
+    margin-top: 20px
+}
+
+.page-2-text p {
+    margin: 0px;
+    font-size: 16px;
+    line-height: 30px;
+    text-shadow: 1px 1px 1px #fff;
+}
+
+.page-3-img-2 {
+    width: 100%;
+    padding-top: 68%;
+    background: url(../../minisite/redclassic/page-3/img-1.png) 0 0 no-repeat;
+    -webkit-background-size: contain;
+    position: absolute;
+    left: 0;
+    bottom: -1%;
+}
+
+.page-3-content {
+    padding: 20px;
+    position: relative;
+    z-index: 5;
+}
+
+.page-3-content h2 {
+    margin: 0px;
+    margin-top: 25px;
+    margin-bottom: 35px;
+    font-size: 30px;
+    font-family: "黑体";
+    color: #fff;
+    font-weight: bold;
+}
+
+.pages-3-item {
+    border-left: 2px solid #ce9451;
+    padding-bottom: 13px;
+}
+
+.pages-4-item {
+    border-left: 2px solid #ce9451;
+    padding-bottom: 17px;
+}
+
+.pages-4-item:first-child {
+    padding-top: 15px
+}
+
+.pages-4-item:last-child {
+    border-left: 2px solid transparent;
+}
+
+.pages-3-item p {
+    margin: 0px;
+    position: relative;
+    padding-left: 15px;
+    margin-top: -5px;
+    font-size: 16px;
+    line-height: 30px;
+    top: -15px;
+    text-shadow: 1px 1px 1px #fff;
+}
+
+.pages-4-item p {
+    margin: 0px;
+    position: relative;
+    padding-left: 15px;
+    margin-top: -8px;
+    font-size: 16px;
+    line-height: 30px;
+    text-shadow: 1px 1px 1px #fff;
+}
+
+.pages-4-item p:before,
+.pages-3-item p:before {
+    width: 11px;
+    height: 11px;
+    background: url(../../minisite/redclassic/page-3/text-icon.png) 0 0 no-repeat;
+    position: absolute;
+    left: -7px;
+    top: 8px;
+    content: '';
+    -webkit-background-size: contain;
+}
+
+.page-5-img-1 {
+    width: 100%;
+    padding-top: 100%;
+    background: url(../../minisite/redclassic/page-4/img-1.png) center 0 no-repeat;
+    -webkit-background-size: contain;
+    margin-top: 8%;
+}
+
+.page-5-img-2 {
+    width: 330px;
+    height: 44px;
+    margin: 0 auto;
+    background: url(../../minisite/redclassic/page-4/img-2.png) center 0 no-repeat;
+    -webkit-background-size: contain;
+    margin-top: 10%
+}
+
+.page-6-line {
+    height: 100%;
+    width: 100%;
+    background: url(../../minisite/redclassic/page-5/line.png) center 10px no-repeat;
+    -webkit-background-size: contain;
+}
+
+.page-6-img-1 {
+    width: 220px;
+    height: 230px;
+    background: url(../../minisite/redclassic/page-5/img-1.png) center 0 no-repeat;
+    -webkit-background-size: contain;
+    margin-left: 20px;
+    margin-top: 5%;
+}
+
+.page-6-img-2 {
+    width: 220px;
+    height: 230px;
+    background: url(../../minisite/redclassic/page-5/img-2.png) center 0 no-repeat;
+    -webkit-background-size: contain;
+    margin-left: 130px;
+    margin-top: 7%;
+}
+
+.page-7-line {
+    height: 100%;
+    width: 100%;
+    background: url(../../minisite/redclassic/page-6/line.gif) right 0 no-repeat;
+    -webkit-background-size: contain;
+    padding-top: 5%;
+}
+
+.page-7-img-1 {
+    width: 220px;
+    height: 230px;
+    background: url(../../minisite/redclassic/page-6/img-1.png) center 0 no-repeat;
+    -webkit-background-size: contain;
+    margin-left: 84px;
+}
+
+.page-7-img-2 {
+    width: 230px;
+    height: 230px;
+    background: url(../../minisite/redclassic/page-6/img-2.png) center 0 no-repeat;
+    -webkit-background-size: contain;
+    margin-left: 73px;
+    margin-top: 13%;
+}
+
+.page-8-line {
+    height: 100%;
+    width: 100%;
+    background: url(../../minisite/redclassic/page-7/line.gif) right 0 no-repeat;
+    -webkit-background-size: contain;
+    padding-top: 5%;
+}
+
+.page-8-img-1 {
+    width: 230px;
+    height: 245px;
+    background: url(../../minisite/redclassic/page-7/img-1.png) center 0 no-repeat;
+    -webkit-background-size: contain;
+    margin-left: 7px;
+}
+
+.page-8-img-2 {
+    width: 230px;
+    height: 230px;
+    background: url(../../minisite/redclassic/page-7/img-2.png) center 0 no-repeat;
+    -webkit-background-size: contain;
+    margin-left: 140px;
+    margin-top: 13%;
+}
+
+.page-9-line {
+    height: 100%;
+    width: 100%;
+    background: url(../../minisite/redclassic/page-8/line.gif) right 0 no-repeat;
+    -webkit-background-size: contain;
+    padding-top: 5%;
+}
+
+.page-9-img-1 {
+    width: 265px;
+    height: 235px;
+    background: url(../../minisite/redclassic/page-8/img-1.png) center 0 no-repeat;
+    -webkit-background-size: contain;
+    margin-left: 84px;
+}
+
+.page-9-img-2 {
+    width: 230px;
+    height: 230px;
+    background: url(../../minisite/redclassic/page-8/img-2.png) center 0 no-repeat;
+    -webkit-background-size: contain;
+    margin-left: 130px;
+    margin-top: 13%;
+}
+
+.page-10-line {
+    height: 100%;
+    width: 100%;
+    background: url(../../minisite/redclassic/page-9/line.png) right 0 no-repeat;
+    -webkit-background-size: contain;
+    padding-top: 5%;
+}
+
+.page-10-img-1 {
+    width: 234px;
+    height: 230px;
+    background: url(../../minisite/redclassic/page-9/img-1.png) center 0 no-repeat;
+    -webkit-background-size: contain;
+    margin-left: 84px;
+}
+
+.page-10-img-2 {
+    width: 234px;
+    height: 233px;
+    background: url(../../minisite/redclassic/page-9/img-2.png) center 0 no-repeat;
+    -webkit-background-size: contain;
+    margin-left: 73px;
+    margin-top: 13%;
+}
+
+.page-11-line {
+    height: 100%;
+    width: 100%;
+    background: url(../../minisite/redclassic/page-10/line.png) right 0 no-repeat;
+    -webkit-background-size: contain;
+    padding-top: 5%;
+}
+
+.page-11-img-1 {
+    width: 230px;
+    height: 232px;
+    background: url(../../minisite/redclassic/page-10/img-1.png) center 0 no-repeat;
+    -webkit-background-size: contain;
+    margin-left: 84px;
+}
+
+.page-11-img-2 {
+    width: 230px;
+    height: 230px;
+    background: url(../../minisite/redclassic/page-10/img-2.png) center 0 no-repeat;
+    -webkit-background-size: contain;
+    margin-left: 103px;
+    margin-top: 13%;
+}
+
+.page-12-title {
+    font-size: 20px;
+    color: #f1b000;
+    margin: 0px;
+    padding: 20px 0px 5px 20px;
+}
+
+.page-12-content {
+    margin: 0px 20px 20px 20px;
+    background-color: #82050a;
+    border-radius: 15px;
+    padding: 10px
+}
+
+.page-12-content p {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color: #fff;
+    line-height: 30px
+}
+
+.page-12-content p strong {
+    color: #f1b000;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.page-code {
+    width: 160px;
+    margin: 5px auto
+}
+
+.page-code p {
+    margin: 0px;
+    color: #f1b000;
+    line-height: 20px
+}
+
+.page-code {
+    width: 100%;
+    margin-top: 8px
+}
+.page-code:after{
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;}
+.page-code-item {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+.page-code p {
+    margin: 0;
+    color: #f1b000;
+    line-height: 20px
+}
+
+.page-code img {
+    width: 140px
+}
+
+@media (max-width: 320px) {
+    .logo {
+        width: 80px;
+        height: 80px;
+        margin-left: -40px
+    }
+    .page-1-img-2 {
+        width: 100px;
+        height: 300px;
+    }
+    .page-1-img-3 {
+        width: 19px;
+        height: 243px;
+    }
+  
+    .page-5-img-2 {
+        width: 280px;
+        height: 37px;
+        margin-top: 0px
+    }
+    .page-6-img-1 {
+        width: 180px;
+        height: 200px;
+    }
+    .page-6-img-2 {
+        width: 180px;
+        height: 200px;
+        margin-top: 0%;
+    }
+    .page-7-img-1 {
+        width: 180px;
+        height: 200px;
+    }
+    .page-7-img-2 {
+        width: 193px;
+        height: 200px;
+        margin-top: 3%;
+    }
+    .page-8-img-1 {
+        width: 176px;
+        height: 190px;
+    }
+    .page-8-img-2 {
+        width: 173px;
+        height: 198px;
+        margin-top: 3%;
+    }
+    .page-9-img-1 {
+        width: 188px;
+        height: 186px;
+    }
+    .page-9-img-2 {
+        width: 165px;
+        height: 199px;
+        margin-top: 3%;
+    }
+    .page-10-img-1 {
+        width: 180px;
+        height: 184px;
+    }
+    .page-10-img-2 {
+        width: 180px;
+        height: 200px;
+        margin-top: 3%;
+    }
+    .page-11-img-1 {
+        width: 180px;
+        height: 200px;
+    }
+    .page-11-img-2 {
+        width: 174px;
+        height: 191px;
+        margin-top: 3%;
+    }
+    .page-12-content{font-size: 12px; }
+    .page-12-content p{line-height: 25px}
+    .page-code p{line-height: 20px;}
+     .page-code img {
+        width: 120px;
+    }
+}

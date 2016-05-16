@@ -1,0 +1,131 @@
+.jm-ajax-detail{padding: 5px 10px; font-size: 14px; line-height: 20px;}
+.jm-detail-routes-price-wapper{padding: 0px 10px; background-color: #fff; line-height: 44px; height: 44px; overflow: hidden;}
+.jm-detail-routes-price-wapper li:first-child{font-size: 14px;color: #757575}
+.jm-detail-routes-price{font-size: 22px; color: #ff6600;position: relative; text-align: right; }
+.jm-detail-routes-price small{font-size: 14px;  height: 30px}
+.jm-qinzi-detail-title{padding-bottom: 0px;}
+.jm-pd10{padding-bottom: 10px;}
+.jm-detail-banner-title-bg{
+    background: url(../images/qz-icon.png) 0 -23px repeat-x;
+    left: 0px;
+    bottom: 0px;
+    -webkit-background-size: 170px;
+    background-size: 170px;
+    }
+.jm-detail-routes-date{padding: 10px 30px 10px 35px; background-color: #fff;border-top: 1px solid #dfdfdf;border-bottom: 1px solid #dfdfdf; position: relative;}
+.jm-detail-routes-date:after{position: absolute; width: 17px; height: 18px;background: url(../images/qz-icon.png) -127px -70px no-repeat; content: "";-webkit-background-size: 170px;
+background-size: 170px; left: 10px; top: 50%; margin-top: -9px;}
+.jm-detail-routes-date li:last-child{text-align: right; color: #39c3d0}
+.jm-detail-tab{border-top: 1px solid #dfdfdf; background-color: #fff;padding-bottom: 58px;}
+.jm-detail-tab .ui-tab-content{margin-top: 0px; padding-top: 10px; }
+.ui-tab-nav li{border-bottom: 1px solid #dfdfdf;}
+.jm-detail-routes-buy-wapper{position: fixed; bottom: 0px; left: 0px; width: 100%;z-index: 900;border-top: 1px solid #dfdfdf; padding: 10px;background-color: #fff;text-align: center;}
+.jm-onlie-service{display: inline-block; padding: 5px 20px; border-radius: 30px;border: 1px solid #dfdfdf; color: #757575}
+.jm-routes-buy-btn{display: inline-block; padding: 5px 35px; border-radius: 30px;border: 1px solid #ff9900; color: #fff;background-color: #ff9900;}
+.jm-cff6600{color: #ff6600}
+.jm-detail-zhuti-package-title{position: relative; padding-left: 25px;}
+.jm-detail-zhuti-package-title:before{position: absolute; width: 18px; height: 16px;background: url(../images/qz-icon.png) -25px -102px no-repeat; content: "";-webkit-background-size: 170px;
+background-size: 170px; left: 0px; top: 50%; margin-top: -8px; }
+.jm-detail-zhuti-package-list{display: block !important; min-height: 60px;}
+.jm-detail-zhuti-package-list h2{margin-bottom: 10px;}
+.jm-detail-zhuti-package-list p{font-size: 14px; color: #757575}
+.jm-detail-zhuti-price-wapper{position: absolute; right: 15px;  text-align: center; top: 50%; margin-top: -33px;}
+.jm-detail-zhuti-price-wapper em{display: block; color: #ff6600;font-size: 24px;}
+.jm-detail-zhuti-price-wapper span{font-size: 16px; padding: 5px 10px; background-color: #ff9900; border-radius: 5px; color: #fff}
+.ui-tab-content > li{height: 0px}
+.ui-tab-content > li.current{height: auto}
+.cj-detail {
+    margin-left: 15px;
+    padding-left: 10px;
+    border-left: 4px solid #ffcc7f;
+    margin-right: 15px;
+    padding-top: 28px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.cj-detail h5 {
+    position: relative;
+    font-size: 14px;
+    color: #f90;
+    margin-bottom: 5px;
+    background: url(http://s.juntu.com/statics/images/mobile/place-icon.png)0 2px no-repeat #fff;
+    -webkit-background-size: 15px auto;
+    background-size: 15px auto;
+    padding-left: 20px
+}
+
+.cj-dot-2,
+.day-num {
+    background-color: #f90
+}
+
+.cj-dot-2 {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    left: -17px;
+    top: 50%;
+    margin-top: -5px
+}
+
+.cj-time {
+    position: absolute;
+    left: -60px;
+    font-size: 75%;
+    height: 23px;
+    line-height: 23px;
+    font-weight: 400;
+    color: #999
+}
+
+.cj-day,
+.day-num {
+    position: relative
+}
+
+.cj-detail p {
+    color: #757575
+}
+
+.cj-chan {
+    margin-bottom: 50px
+}
+
+.cj-chan:last-child {
+    margin-bottom: 0
+}
+
+.cj-day {
+    height: 28px;
+    margin-bottom: 10px;
+    margin-top: -37px
+}
+
+.day-num {
+    width: 60px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    color: #fff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-left: 10px
+}
+
+.day-num .Arr {
+    border-right: 13px solid #f90;
+    border-top: 13px solid #fff;
+    border-bottom: 13px solid #fff;
+    position: absolute;
+    left: -13px;
+    top: 50%;
+    margin-top: -13px
+}
+@media (max-width: 320px) {
+  .jm-detail-routes-price{font-size: 20px;}
+  .jm-detail-routes-date{padding-right: 20px;}
+  .jm-detail-zhuti-price-wapper{right: 10px;}
+}

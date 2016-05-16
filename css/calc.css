@@ -1,0 +1,16 @@
+.jm-calc-wapper {
+    height: 28px;
+    line-height: 28px;
+    display: inline-block;
+    position: relative;
+    background-color: #fff;
+    border-radius: 3px;
+    border: 1px solid #d1d0d4;
+    font-size: 0px;
+}
+.jm-calc-wapper>input{border: 0px ; width: 30px; vertical-align: top; height: 28px; text-align: center; font-size: 14px; }
+.jm-calc-minus{border-right: 1px solid #d1d0d4}
+.jm-calc-add{border-left: 1px solid #d1d0d4}
+.jm-calc-add,.jm-calc-minus{width: 28px; display: inline-block; height: 28px; position: relative;}
+
+.jm-calc-wapper> .active:after{color: #f3b865}

@@ -1,0 +1,13 @@
+.jm-btn-group {
+  display: -webkit-box;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-align: center; }
+
+.jm-btn-group button {
+  display: block;
+  -webkit-box-flex: 1;
+  margin-right: 10px; }
+  .jm-btn-group button:first-child {
+    margin-left: 10px; }

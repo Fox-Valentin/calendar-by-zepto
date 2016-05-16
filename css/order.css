@@ -1,0 +1,320 @@
+body {
+    background-color: #efeff4;
+}
+
+.jm-pd50 {
+    padding-bottom: 50px;
+}
+
+.jm-order-title {
+    padding: 10px 15px;
+}
+
+.jm-li-title {
+    color: #757575
+}
+
+.jm-list {
+    margin-bottom: 10px;
+}
+
+.jm-sub-title {
+    font-size: 14px;
+    color: #757575;
+    padding: 8px 15px;
+}
+
+.jm-list-action {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    margin-top: -10px;
+    text-align: right;
+    width: 60%;
+}
+
+.jm-list-result-title {
+    width: 75px;
+    position: absolute;
+    text-align: left;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #757575;
+}
+
+.jm-list-result {
+    display: inline-block;
+    color: #353535;
+    padding-left: 80px;
+}
+
+.jm-type-group {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    margin-top: -15px;
+}
+
+.jm-ticket-type {
+    position: relative;
+    padding-right: 20px;
+}
+
+.jm-arrowlink .jm-list-action {
+    right: 30px;
+}
+
+.jm-order-totle {
+    height: 45px;
+    line-height: 45px;
+    background-color: #fcfcfc;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    border-top: #dcdcdc 1px solid;
+}
+
+.jm-order-totle-left {
+    width: 60%;
+    height: 45px;
+    display: block;
+    float: left;
+    text-align: center;
+    color: #353535;
+}
+
+.jm-order-totle-left span,
+.jm-order-price {
+    font-size: 20px;
+    color: #ff6600;
+}
+
+.jm-order-btn {
+    border: 0px;
+    background-color: #ff9900;
+    width: 40%;
+    height: 45px;
+    text-align: center;
+    float: left;
+    color: #ffffff;
+}
+
+.jm-order-btn.disabled {
+    background-color: #aaaaaa;
+}
+
+.jm-order-pay-tips {
+    color: #ff9900;
+    padding: 10px 15px;
+}
+
+.jm-sub-pay-title {
+    background-color: #ff9900;
+    line-height: 45px;
+    box-sizing: border-box;
+    padding-left: 15px;
+    color: #fff;
+}
+
+.jm-order-price {
+    margin-top: -15px;
+}
+.jm-price-style{color: #ff6600}
+.jm-datepicker caption {
+    height: 36px;
+    border-top: 1px solid #cecdd1;
+    border-bottom: 1px solid #cecdd1;
+    background-color: #f2f2f2;
+    text-align: center;
+    line-height: 36px;
+}
+
+.jm-datepicker {
+    box-sizing: border-box;
+}
+
+.jm-datepicker th {
+    width: 14.2847%;
+    text-align: center;
+    font-weight: normal;
+    padding: 8px 0px;
+    box-sizing: border-box;
+}
+
+.jm-datepicker .dateTable {
+    width: 98%;
+    margin: 0px auto;
+    margin-top: 5px;
+}
+
+.jm-datepicker td {
+    width: 14.2847%;
+    text-align: center;
+    font-weight: normal;
+    height: 50px;
+    box-sizing: border-box;
+    border: 1px solid #dedde0;
+    background-color: #f8f8f8;
+    color: #c9c9c9
+}
+
+.jm-datepicker td.active {
+    background-color: #ffffff;
+    color: #363636;
+    vertical-align: top;
+}
+
+.jm-datepicker td .dateprice {
+    color: #ff6600;
+    font-size: 12px;
+}
+
+.jm-err input {
+    width: 85%;
+}
+
+.jm-err i {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+.jm-err i:before {
+    font-family: "iconfont" !important;
+    font-size: 18px;
+    line-height: 20px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    display: block;
+    color: #ff6600;
+    content: "\e6e5";
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    margin-top: -8px;
+}
+.jm-get-code-tips h4{ text-align: center; border-bottom: 1px solid #8e8e93; padding-bottom: 8px;margin-bottom: 10px;}
+.jm-get-code-tips p{font-size: 14px;}
+.calendar-body {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #fcfcfc;
+    overflow: auto;
+    z-index: 1000
+}
+.jm-coupon-wapper {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fcfcfc;
+}
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both
+}
+
+@-webkit-keyframes fadeInRightBig {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(2000px, 0, 0);
+        transform: translate3d(2000px, 0, 0)
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+@keyframes fadeInRightBig {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(2000px, 0, 0);
+        transform: translate3d(2000px, 0, 0)
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+.fadeInRightBig {
+    -webkit-animation-name: fadeInRightBig;
+    animation-name: fadeInRightBig
+}
+
+@-webkit-keyframes fadeOutRightBig {
+    0% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translate3d(2000px, 0, 0);
+        transform: translate3d(2000px, 0, 0)
+    }
+}
+
+@keyframes fadeOutRightBig {
+    0% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translate3d(2000px, 0, 0);
+        transform: translate3d(2000px, 0, 0)
+    }
+}
+
+.fadeOutRightBig {
+    -webkit-animation-name: fadeOutRightBig;
+    animation-name: fadeOutRightBig
+}
+
+@media (max-width: 320px) {
+    .jm-type-group,
+    .jm-list-action {
+        right: 10px;
+    }
+    .jm-sub-pay-title {
+        padding-left: 10px;
+    }
+    .jm-order-title,
+    .jm-order-pay-tips {
+        padding: 10px 10px;
+    }
+    .jm-sub-title {
+        padding: 8px 10px;
+    }
+    .jm-form-item input {
+        padding-right: 10px;
+    }
+}
+/*2016-04-18*/
+.jm-order-back {
+    height: 45px;
+    line-height: 45px;
+    background-color: #fcfcfc;
+  text-align: center;
+    border-top: #dcdcdc 1px solid;
+}
+.jm-order-back-btn{ background-color: #ff9900;
+    width: 80%;
+    height: 40px;
+    border-radius: 20px;
+    color: #ffffff;}
+.jm-order-li-db{display: block !important;}
+.jm-order-title-bottom span{font-size: 14px; color: #666}
+.jm-order-title-bottom span i{color: #333}
+.jm-order-back-price{float: right; color: #ff3300}
