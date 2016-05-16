@@ -1,15 +1,16 @@
     (function($){
         // defaults 为默认设置项，其中包括插入的dom对象
         // jm_datepicker_wrap，以及年月和显示月的数量
-        var defaults = {
-            jm_datepicker_wrap : $('.jm-datepicker'),
-            year : new Date().getFullYear(),
-            month : new Date().getMonth() + 1,
-            month_num : 1,
-            ajax_url : '',
-            start_date : null,
-            end_date : null
-        }
+            var defaults = {
+                jm_datepicker_wrap : $('.jm-datepicker'),
+                year : new Date().getFullYear(),
+                month : new Date().getMonth() + 1,
+                month_num : 1,
+                ajax_url : '',
+                start_date : null,
+                end_date : null,
+                day_count : null
+            }
         
             // jm_calendar为jq的静态方法 调用方式为$.jm_calendar(options)
             // options 是设置项，可以不填或者按defaults覆盖填写
@@ -26,7 +27,7 @@
                     options.jm_datepicker_wrap.append(str);
                     // 若起始结束项不为null，则取其值，否则取空字符串
                     var start_date = options.start_date != null ? options.start_date.val() : '';
-                    var date_end = options.end_date != null ? options.end_date.val() : '';
+                    var end_date = options.end_date != null ? options.end_date.val() : '';
                     // 请求日=》价格
                     $.getJSON(options.ajax_url, function(json, textStatus) {
                            for(var i = 0, len = json.length;i < len; i++) {
@@ -45,17 +46,17 @@
                             // 生成日历dom
                             $('.jm-datepicker').append(str);
                             var tds = $('.jm-datepicker td.active');
-                            // 如果date_end存在，循环日期项，大于结束日期，小于开始日期项全部置黄色
-                            if(date_end){
+                            // 如果end_date存在，循环日期项，大于结束日期，小于开始日期项全部置黄色
+                            if(end_date){
                                for(var i = 0,len = tds.size();i < len; i++){
-                                     // 如果date_end存在，循环日期项，大于结束日期，小于开始日期项全部置黄色
-                                    if(new Date(tds.eq(i).data('date')) >= new Date(start_date) && new Date(tds.eq(i).data('date')) <= new Date(date_end)){
+                                     // 如果end_date存在，循环日期项，大于结束日期，小于开始日期项全部置黄色
+                                    if(new Date(tds.eq(i).data('date')) >= new Date(start_date) && new Date(tds.eq(i).data('date')) <= new Date(end_date)){
                                         tds.eq(i).addClass('selected1');
                                     }
                                     // 如果结束input的data-end属性，值不为空字符串
                                     // 则日期项与结束日期相等值添加绿色类
                                     if(options.end_date.attr('data-end') != ''){
-                                        if(tds.eq(i).data('date') == date_end){
+                                        if(tds.eq(i).data('date') == end_date){
                                             tds.eq(i).removeClass('selected').removeClass('selected1').addClass('selected-1');
                                         }
                                     }
@@ -63,7 +64,7 @@
                             }
                         //  若事件源为结束input
                             if($target.hasClass('date-end')){
-                                if(start_date){console.log(start_date)
+                                if(start_date){
                                 // 如果start_date存在，循环日期项，小于开始日期项全部置灰
                                    for(var i = 0,len = tds.size();i < len; i++){
                                         if(new Date(tds.eq(i).data('date')) < new Date(start_date)){
@@ -84,41 +85,15 @@
                         // 获取所有的可选择td
                         var tds = $('.jm-datepicker td.active');
                         // 全部去除渲染颜色状态类 后面重新渲染
-                        tds.removeClass('selected').removeClass('selected-1').removeClass('selected1');
+                        tds.removeClass('selected1');
                         // 点击的td选中状态
                         if($target.hasClass('date-start')){
-                            // 如果事件源为起始，循环日期项，小于今天日期项全部置灰
-                               for(var i = 0,len = tds.size();i < len; i++){
-                                    if(new Date(tds.eq(i).data('date')) < new Date()){
-                                        tds.eq(i).removeClass('active').addClass('day pass');
-                                    }
-                            }
-                            $(this).removeClass('selected1').addClass('selected')
-                        }else{
-                            $(this).removeClass('selected1').addClass('selected-1');
-                        } 
-                        // 获取点击日的完整年月日
-                        selected_date = $(this).data('date');
-                        // 如果事件源是结束时间，取选到值，若不是，取结束时间input的data-end属性值
-                        date_end = $target.hasClass('date-end') ? selected_date : options.end_date.attr('data-end');
-
-                        // 如果date_end存在
-                        if(date_end){
-                            // 循环所有的日期选项
-                            for(var i = 0,len = tds.size();i < len; i++){
-                                // 将起始结束时间之前的选项添加类
-                                    if(new Date(tds.eq(i).data('date')) > new Date(start_date) && new Date(tds.eq(i).data('date')) < new Date(date_end)){
-                                        tds.eq(i).addClass('selected1');
-                                    }
-                            }
-                        }
-                        // 将选择的日历日期赋值给事件绑定的input
-                        $target.val(selected_date);
-                        // 判断事件源是否是起始日期项
-                        // 业务逻辑，当起始日期选中，结束日期默认加一天
-                        // 只选择结束日期，则不进行下列流程
-                        if($target.hasClass('date-start')){
+                            // 判断事件源是否是起始日期项
+                            // 业务逻辑，当起始日期选中，结束日期默认加一天
+                            // 只选择结束日期，则不进行下列流程
                             $target.attr('data-start',selected_date);
+                            tds.removeClass('selected');
+                            $(this).addClass('selected');
                             // 判断是否存在结束日期项
                             // 判断所选择的开始日期大于结束日期
                             if(options.end_date != null && new Date(options.start_date.val()) > new Date(options.end_date.val())){
@@ -126,14 +101,68 @@
                                 // 结束选项默认为起始日期+1
                                 options.end_date.val(before_date.getFullYear()+'-'+(before_date.getMonth()+1) + '-' + (before_date.getDate()+1));
                             }
+
+                            // 如果事件源为起始，循环日期项，小于今天日期项全部置灰
+                               for(var i = 0,len = tds.size();i < len; i++){
+                                    if(new Date(tds.eq(i).data('date')) < new Date()){
+                                        tds.eq(i).removeClass('active').addClass('day pass');
+                                    }
+                            }
+                        }else{
+                            tds.removeClass('selected-1');
+                            $(this).addClass('selected-1');
                         }
-                        // 日历推出动画
-                        $('.calendar-body').removeClass('fadeInRightBig').addClass('fadeOutRightBig');
-                        // 移出日历dom
-                        setTimeout(function(){$('.calendar-body').remove();}, 1000);
+
+                        // 获取点击日的完整年月日
+                        selected_date = $(this).data('date');
+                        // 如果事件源是结束时间，取选到值
+                        // 如果事件源是起始时间，取选到值
+                        // end_date = $target.hasClass('date-end') ? selected_date : options.end_date.attr('data-end');
+                        if($target.hasClass('date-end'))end_date = selected_date;
+                        if($target.hasClass('date-start'))start_date = selected_date;
+                        
+                        // 如果end_date存在
+                        // 事件源为结束 那么起始td项会渲染为选中状态
+                        if(end_date && $target.hasClass('date-end')){
+                            // 循环所有的日期选项
+                            for(var i = 0,len = tds.size();i < len; i++){
+                                // 将起始结束时间之前的选项添加类
+                                    if(new Date(tds.eq(i).data('date')) >= new Date(start_date) && new Date(tds.eq(i).data('date')) < new Date(end_date)){
+                                        tds.eq(i).addClass('selected1');
+                                    }
+                            }
+                        }
+                        // 如果end_date存在
+                        // 事件源为起始 那么起始td项不会渲染为选中状态
+                        if(end_date && $target.hasClass('date-start')){
+                            // 循环所有的日期选项
+                            for(var i = 0,len = tds.size();i < len; i++){
+                                // 将起始结束时间之前的选项添加类
+                                    if(new Date(tds.eq(i).data('date')) > new Date(start_date) && new Date(tds.eq(i).data('date')) < new Date(end_date)){
+                                        tds.eq(i).addClass('selected1');
+                                    }
+                            }
+                        }
+                        // 将选择的日历日期赋值给事件绑定的input
+                        $target.val(selected_date);
+                        
+                        
+                        // 退出
+                        quit();
                         // 如果事件源是结束时间，则给此dom属性赋值选中日期
                         if($target.hasClass('date-end'))$target.attr('data-end',selected_date);
                     });
+                    // 日历关闭事件
+                    $(document).on('tap', '.close-pup-body', function(event) {
+                        event.preventDefault();
+                        quit();
+                    });
+                    function quit(){
+                       // 日历推出动画
+                        $('.calendar-body').removeClass('fadeInRightBig').addClass('fadeOutRightBig');
+                        // 移出日历dom
+                        setTimeout(function(){$('.calendar-body').remove();}, 1000);
+                    }
                     function operat(options){
                         var num = 1;
                             var str = '';
