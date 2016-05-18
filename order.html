@@ -14,17 +14,19 @@
 		<link rel="stylesheet" href="css/btn.css" />
 		<link rel="stylesheet" href="css/calc.css" />
 		<link rel="stylesheet" href="css/order.css" />
+    	<link rel="stylesheet" href="css/slider.css" />
 		<script type="text/javascript" src="js/lib/zepto.js" ></script>
+    	<script type="text/javascript" src="js/jssor.slider.min.js"></script>
 		<script type="text/javascript" src="js/lib/tap.js" ></script>
 		<script type="text/javascript" src="js/lib/core.js" ></script>
 		<script type="text/javascript" src="js/spinner.js" ></script>
 		<script type="text/javascript" src="js/app.js" ></script>
 		<script type="text/javascript" src="js/scenic-order.js" ></script>
-	    <link rel="stylesheet" type="text/css" href="calendar.css">
-	    <script src="calendar.js"></script>
+	    <link rel="stylesheet" type="text/css" href="css/calendar.css">
+	    <script src="js/calendar.js"></script>
 		<style>
 		.jm-list-action-l{	
-			    width: 100%;
+			    /*width: 100%;*/
 		}
 		.jm-form-item .jm-list-action-l input{
 			text-align: left;
@@ -40,13 +42,13 @@
 		.day-count{
 			    box-sizing: border-box;
 			    width: 60px;
-			    height: 40px;
+			    height: 36px;
 			    border-radius: 50%;
 			    text-align: center;
-			    line-height: 40px;
-			    font-size: 14px;
+			    line-height: 36px;
+			    font-size: 12px;
 			    position: absolute;
-			    right: -48px;
+			    right: -60px;
 			    top: 50%;
 			    margin-top: -10px;
 			    background-color: #fff;
@@ -55,8 +57,8 @@
 				    display: inline-block;
 			    border: 1px solid #e0e0e0;
 			    border-radius: 50%;
-			    width: 40px;
-			    height: 40px;
+			    width: 36px;
+			    height: 36px;
 		}
 		.jm-list-date{
 			    position: absolute;
@@ -66,9 +68,13 @@
 				position: relative;
 			    top: -12px;
 			    font-size: 10px;
+                    z-index: 1;
 		}
 		.jm-order-btn-wrap{
 			background-color: #fff;
+		}
+		.jssorb05 {
+		    position: absolute;
 		}
 		@media (max-width: 320px){
 			.jm-date-start{
@@ -79,6 +85,7 @@
 			}
 
 		}
+        /**/
 		</style>
 	</head>
 
@@ -88,10 +95,46 @@
 			<span>门票订单</span>
 			<a href="#" class="jm-header-right_icon"></a>
 		</header>
+    <section class="jm-index-banner">
+        <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 720px; height: 340px; overflow: hidden; visibility: hidden;">
+            <!-- Loading Screen -->
+            <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+                <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+                <div style="position: absolute; display: block; background: url(http://static.juntu.com/images/mtload.gif) no-repeat center center; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+            </div>
+            <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 720px; height: 340px; overflow: hidden;">
+                <div data-p="112.50" style="display: none;">
+                    <a href="http://s.juntu.com/index.php?m=mobile&a=theme&id=114" title="1元游陕西 第五季"><img src2="http://image.juntu.com/uploadfile/2016/0408/20160408050352856.jpg" alt="1元游陕西 第五季"></a>
+                </div>
+                <div data-p="112.50" style="display: none;">
+                    <a href="http://s.juntu.com/index.php?m=mobile&a=theme&id=107&pc_hash=6wFFPs" title="自驾川藏线"><img src2="http://image.juntu.com/uploadfile/2016/0323/20160323020826179.jpg" alt="自驾川藏线"></a>
+                </div>
+                <div data-p="112.50" style="display: none;">
+                    <a href="http://s.juntu.com/index.php?m=mobile&a=theme&id=104&pc_hash=4GaSpg" title="花样亲子游 童趣乐悠游"><img src2="http://image.juntu.com/uploadfile/2016/0323/20160323102221369.jpg" alt="花样亲子游 童趣乐悠游"></a>
+                </div>
+                <div data-p="112.50" style="display: none;">
+                    <a href="http://s.juntu.com/index.php?m=mobile&a=theme&id=127&pc_hash=UUpSoS" title="99元起 骏途带你游西安"><img src2="http://image.juntu.com/uploadfile/2016/0426/20160426055031324.jpg" alt="99元起 骏途带你游西安"></a>
+                </div>
+                <div data-p="112.50" style="display: none;">
+                    <a href="http://s.juntu.com/index.php?m=mobile&c=index&a=xc_160422" title="2016年最美乡村公路评选活动"><img src2="http://image.juntu.com/uploadfile/2016/0422/20160422065130484.jpg" alt="2016年最美乡村公路评选活动"></a>
+                </div>
+                <div data-p="112.50" style="display: none;">
+                    <a href="http://s.juntu.com/index.php?m=mobile&a=theme&preview=1&id=129" title="你听深蓝色在召唤，马上出境游海岛"><img src2="http://image.juntu.com/uploadfile/2016/0428/20160428111038473.jpg" alt="你听深蓝色在召唤，马上出境游海岛"></a>
+                </div>
+            </div>
+            <!-- Bullet Navigator -->
+            <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
+                <!-- bullet navigator item prototype -->
+                <div data-u="prototype" style="width:16px;height:16px;"></div>
+            </div>
+        </div>
+    </section>
 		<section class="jm-pd50">
 			<ul class="jm-list jm-list-text jm-list-active jm-list-cover  jm-list-link  jm-border-tb clearfix" style="margin-bottom:0;">
 				<li class="jm-border-t jm-arrowlink">
-					<span class="jm-li-title">目的地</span>
+					<span class="jm-li-title">
+                        目的地
+                    </span>
 					<div class="jm-list-action">
 						西安
 					</div>
@@ -100,16 +143,12 @@
 			<ul class="jm-list jm-list-text jm-list-active jm-list-cover  jm-list-link clearfix"  style="margin-bottom:0;">
 				<li class="jm-border-t jm-form-item jm-date-start">
 					<span class="jm-li-title  jm-date-start-title">入住</span>
-					<div class="jm-list-action-l  jm-list-date">
-						<input type="text" class="date-start" readonly="readonly" data-start="">
-					</div>
-						<div class="day-count"><em><font id="day-count">33</font>天</em></div>
+						<input type="hidden" class="date-start" readonly="readonly" data-start="">
+						<div class="day-count"><em><font id="day-count">1</font>天</em></div>
 				</li>
 				<li class="jm-form-item jm-date-end">
 					<span class="jm-li-title jm-date-end-title">离店</span>
-					<div class="jm-list-action-l jm-list-date">
-						<input type="text" class="date-end" readonly="readonly" data-end="">
-					</div>
+						<input type="hidden" class="date-end" readonly="readonly" data-end="">
 				</li>
 			</ul>
 			<ul class="jm-list jm-list-text jm-list-active jm-list-cover  jm-list-link jm-border-tb clearfix"  style="margin-bottom:0;">
@@ -133,39 +172,255 @@
 			    </button>
 			</div>
 		</section>
+        <section>
+            <header class="jm-header">
+                <a href="#" class="jm-header-left_icon"><i class="jm-iconfont">&#xe679;</i></a>
+                <span>选择城市</span>
+                <a href="#" class="jm-header-right_icon"></a>
+            </header>
+            <ul class="jm-list-text border-list">
+                <li class="jm-border-b" style="background-color: #fff;padding-left: 15px;">陕西</li>
+                <li class="jm-border-b" style="background-color: #fff;padding-left: 15px;">陕西</li>
+                <li class="jm-border-b" style="background-color: #fff;padding-left: 15px;">陕西</li>
+                <li class="jm-border-b" style="background-color: #fff;padding-left: 15px;">陕西</li>
+            </ul>
+        </section>
 		<script type="text/javascript">
+		// $(document).ready(function() {
+		// 	var $date_start = $('.date-start');
+		// 	var $date_end = $('.date-end');
 
-		$(document).ready(function() {
-			var $date_start = $('.date-start');
-			var $date_end = $('.date-end');
-			var now = new Date();
-			$date_start.val(now.getFullYear()+'-'+(now.getMonth()+1) + '-' + now.getDate())
-			$date_end.val(now.getFullYear()+'-'+(now.getMonth()+1) + '-' + (now.getDate()+1))
-			var $day_count = $('#day-count')
-
-			var options = {
-	            jm_datepicker_wrap : $('body'),
-	            month_num : 5,
-	            ajax_url : 'data.php',
-	            start_date : $date_start,
-	            end_date : $date_end,
-	            day_count : $day_count
-	        };
-			$date_start.on('tap', function(event) {
-				if($('.calendar-body').size() > 0) return false;
-				event.preventDefault();
-				$date_start.jm_calendar(options);
-			});
-			$date_end.on('tap', function(event) {
-				if($('.calendar-body').size() > 0) return false;
-				event.preventDefault();
-				$date_end.jm_calendar(options);
+		// 	var options = {
+	 //            jm_datepicker_wrap : $('body'),
+	 //            month_num : 5,
+	 //            ajax_url : 'data.php',
+	 //            start_date : $date_start,
+	 //            end_date : $date_end,
+	 //            day_count : $day_count
+	 //        };
+		// 	$date_start.on('tap', function(event) {
+		// 		if($('.calendar-body').size() > 0) return false;
+		// 		event.preventDefault();
+		// 		$date_start.jm_calendar(options);
+		// 	});
+		// 	$date_end.on('tap', function(event) {
+		// 		if($('.calendar-body').size() > 0) return false;
+		// 		event.preventDefault();
+		// 		$date_end.jm_calendar(options);
 				
-			});
+		// 	});
 
 		        
-		});
+		// });
+        $(document).ready(function() {
+            var $jm_date_start = $('.jm-date-start');
+            var $jm_date_end = $('.jm-date-end');
+
+            var $date_start = $('.date-start');
+            var $date_end = $('.date-end');
+            var $day_count = $('#day-count')
+
+            var options = {
+                jm_datepicker_wrap : $('body'),
+                month_num : 5,
+                ajax_url : 'data.php',
+                start_date : $date_start,
+                end_date : $date_end,
+                day_count : $day_count
+            };
+            $jm_date_start.on('tap',$date_start , function(event) {
+                event.preventDefault();
+                if($('.calendar-body').size() > 0) return false;
+                event.preventDefault();
+                $date_start.jm_calendar(options);
+            });
+            $jm_date_end.on('tap', $date_end, function(event) {
+                event.preventDefault();
+                if($('.calendar-body').size() > 0) return false;
+                event.preventDefault();
+                $date_end.jm_calendar(options);
+            });                
+        });
 		</script>
+		<script>
+    jssor_1_slider_init = function() {
+        var jssor_1_SlideoTransitions = [
+            [{
+                b: 5500,
+                d: 3000,
+                o: -1,
+                r: 240,
+                e: {
+                    r: 2
+                }
+            }],
+            [{
+                b: -1,
+                d: 1,
+                o: -1,
+                c: {
+                    x: 51.0,
+                    t: -51.0
+                }
+            }, {
+                b: 0,
+                d: 1000,
+                o: 1,
+                c: {
+                    x: -51.0,
+                    t: 51.0
+                },
+                e: {
+                    o: 7,
+                    c: {
+                        x: 7,
+                        t: 7
+                    }
+                }
+            }],
+            [{
+                b: -1,
+                d: 1,
+                o: -1,
+                sX: 9,
+                sY: 9
+            }, {
+                b: 1000,
+                d: 1000,
+                o: 1,
+                sX: -9,
+                sY: -9,
+                e: {
+                    sX: 2,
+                    sY: 2
+                }
+            }],
+            [{
+                b: -1,
+                d: 1,
+                o: -1,
+                r: -180,
+                sX: 9,
+                sY: 9
+            }, {
+                b: 2000,
+                d: 1000,
+                o: 1,
+                r: 180,
+                sX: -9,
+                sY: -9,
+                e: {
+                    r: 2,
+                    sX: 2,
+                    sY: 2
+                }
+            }],
+            [{
+                b: -1,
+                d: 1,
+                o: -1
+            }, {
+                b: 3000,
+                d: 2000,
+                y: 180,
+                o: 1,
+                e: {
+                    y: 16
+                }
+            }],
+            [{
+                b: -1,
+                d: 1,
+                o: -1,
+                r: -150
+            }, {
+                b: 7500,
+                d: 1600,
+                o: 1,
+                r: 150,
+                e: {
+                    r: 3
+                }
+            }],
+            [{
+                b: 10000,
+                d: 2000,
+                x: -379,
+                e: {
+                    x: 7
+                }
+            }],
+            [{
+                b: 10000,
+                d: 2000,
+                x: -379,
+                e: {
+                    x: 7
+                }
+            }],
+            [{
+                b: -1,
+                d: 1,
+                o: -1,
+                r: 288,
+                sX: 9,
+                sY: 9
+            }, {
+                b: 9100,
+                d: 900,
+                x: -1400,
+                y: -660,
+                o: 1,
+                r: -288,
+                sX: -9,
+                sY: -9,
+                e: {
+                    r: 6
+                }
+            }, {
+                b: 10000,
+                d: 1600,
+                x: -200,
+                o: -1,
+                e: {
+                    x: 16
+                }
+            }]
+        ];
+        var jssor_1_options = {
+            $AutoPlay: true,
+            $SlideDuration: 200,
+            $SlideEasing: $Jease$.$OutQuint,
+            $CaptionSliderOptions: {
+                $Class: $JssorCaptionSlideo$,
+                $Transitions: jssor_1_SlideoTransitions
+            },
+            $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+            },
+            $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+            }
+        };
+        var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+        function ScaleSlider() {
+            var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+            if (refSize) {
+                refSize = Math.min(refSize, 720);
+                jssor_1_slider.$ScaleWidth(refSize);
+            } else {
+                window.setTimeout(ScaleSlider, 30);
+            }
+        }
+        ScaleSlider();
+        $Jssor$.$AddEvent(window, "load", ScaleSlider);
+        $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+        $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+        //responsive code end
+    };
+    jssor_1_slider_init();
+    </script>
 	</body>
 
 </html>

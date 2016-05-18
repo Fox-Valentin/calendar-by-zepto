@@ -215,3 +215,82 @@ caption, th {
     background-color: #f3b865!important;
     color:#fff!important;
 }
+
+/*2016.5.18*/
+.date-start-getDay,.date-end-getDay{
+    display: inline-block;
+    color: #53C4D0;
+    top: 50%;
+    width: 38px;
+    text-align: center;
+}
+.date-start-getDate,.date-end-getDate{
+    color: #53C4D0;
+    display: inline-block;
+}
+.date-end-text,.date-start-text{
+       position: absolute;
+    top: 50%;
+    margin-top: -10px; 
+        left: 50%;
+    margin-left: -60px;
+    width: 120px;
+}
+.jm-date-start,.jm-date-end{
+            height: 30px;
+}
+.jm-hotel-date-start-title,.jm-hotel-date-end-title{
+                    left: 50%;
+                position: absolute;
+                top: 2px;
+                width: 60px;
+                text-align: center;
+                margin-left: -40px;
+                font-size: 12px;
+        }
+
+        .jm-date-start {
+            width: 35%;
+            float: left;
+        }
+        .jm-date-end {
+            float: right;
+            width: 37%;
+        }
+        .jm-list-action-l {
+           /* width: 100%;*/
+        }
+        .jm-list-date {
+            position: absolute;
+            top: 18px;
+        }
+        .day-count{
+                box-sizing: border-box;
+                width: 60px;
+                height: 36px;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 36px;
+                font-size: 12px;
+                position: absolute;
+                right: -56px;
+                top: 50%;
+                margin-top: -18px;
+                background-color: #fff;
+        }
+        .day-count em{
+                    display: inline-block;
+                border: 1px solid #e0e0e0;
+                border-radius: 50%;
+                width: 36px;
+                height: 36px;
+        }
+        .jm-form-item .jm-list-action-l input {
+            text-align: left;
+        }  
+@media (max-width: 320px){
+            .day-count{
+                margin-top: -18px;
+                    right: -46px;
+            }
+}
