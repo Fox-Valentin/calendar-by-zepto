@@ -22,9 +22,10 @@
             if($('.date-start').val() == '' && $('.date-end').val() == '' ){
                 var now = new Date();
                 var date_start = now.getFullYear() + '-' + (now.getMonth() + 1) + '-' + now.getDate();
-                var date_end = now.getFullYear() + '-' + (now.getMonth() + 1) + '-' + (now.getDate() + 1);
+                var date_end = addDays(1,now);
+                var week_end = getWeekDay(date_end.getDay());
+                date_end = date_end.getFullYear() + '-' + (date_end.getMonth() + 1) + '-' + (date_end.getDate());
                 var week_start = getWeekDay(now.getDay());
-                var week_end = getWeekDay(now.getDay() + 1);
             }else{
                 // 不为空则使用默认值
                 var start_date = new Date($('.date-start').val());
@@ -32,7 +33,7 @@
                 var date_start = start_date.getFullYear() + '-' + (start_date.getMonth() + 1) + '-' + start_date.getDate();
                 var date_end = start_end.getFullYear() + '-' + (start_end.getMonth() + 1) + '-' + (start_end.getDate());
                 var week_start = getWeekDay(start_date.getDay());
-                var week_end = getWeekDay(start_end.getDay() + 1);
+                var week_end = getWeekDay(start_end.getDay());
             }
 
             var date_start_default_str = "<div class='date-start-text'><div class='date-start-getDate'>" + date_start + "</div><div class='date-start-getDay'>" + week_start + "</div></div>";
@@ -148,7 +149,7 @@
             // 日历出现的动画效果
             $('.calendar-body').removeClass('hide').addClass('fadeInRightBig');
             // 日期点击事件
-            $(document).off('tap').on('tap','.jm-datepicker td.active', function(event) {
+            $(document).one('tap','.jm-datepicker td.active', function(event) {
                 event.preventDefault();
                 // 获取点击日的完整年月日
                 selected_date = $(this).data('date');
@@ -174,8 +175,9 @@
                     // 判断是否存在结束日期项
                     // 判断所选择的开始日期大于结束日期
                     if (options.end_date != null && new Date(options.start_date.val()) >= new Date(options.end_date.val())) {
-                        var before_date = new Date(options.start_date.val());
-                        before_date = before_date.getFullYear() + '-' + (before_date.getMonth() + 1) + '-' + (before_date.getDate() + 1);
+                        // 增加一天
+                        var before_date = addDays(1,options.start_date.val());
+                        before_date = before_date.getFullYear() + '-' + (before_date.getMonth()+1) + '-' + (before_date.getDate());
                         // 结束选项默认为起始日期+1
                         options.end_date.val(before_date);
                         // 给结束日期的dom添加日期和周日期
@@ -244,7 +246,6 @@
                 event.preventDefault();
                 quit();
             });
-
             function quit() {
                 // 日历推出动画
                 $('.calendar-body').removeClass('fadeInRightBig').addClass('fadeOutRightBig');
@@ -392,5 +393,12 @@
             }
 
             return week_day[num];
+        }
+        // 增加一天
+        function addDays(num,time){
+                var single = 86400000;
+                time = new Date(time);
+                time = time.getTime() + num * single;
+                return new Date(time);
         }
     })($);
