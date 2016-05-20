@@ -75,9 +75,41 @@
                         // 建立hash表对应月份-日-日价格
                         month_price[month_exist][date] = json[i].price;
                     }
-                    
+                    // 执行创建日历方法并返回日历拼接字符串
+                    str = operat(options);
+                    // 生成日历dom
+                    $('.jm-datepicker').append(str);
+                    var tds = $('.jm-datepicker td.active');
+                    // 如果end_date存在，循环日期项，大于结束日期，小于开始日期项全部置黄色
+                    if (end_date) {
+                        for (var i = 0, len = tds.size(); i < len; i++) {
+                            // 如果end_date存在，循环日期项，大于结束日期，小于开始日期项全部置黄色
+                            if (new Date(tds.eq(i).data('date')) >= new Date(start_date) && new Date(tds.eq(i).data('date')) <= new Date(end_date)) {
+                                tds.eq(i).addClass('selected1');
+                            }
+                            // 如果结束input的data-end属性，值不为空字符串
+                            // 则日期项与结束日期相等值添加绿色类
+                            if (options.end_date.attr('data-end') != '') {
+                                if (tds.eq(i).data('date') == end_date) {
+                                    tds.eq(i).removeClass('selected').removeClass('selected1').addClass('selected-1');
+                                }
+                            }
+                        }
+                    }
+                    //  若事件源为结束input
+                    if ($target.hasClass('date-end')) {
+                        if (start_date) {
+                            // 如果start_date存在，循环日期项，小于开始日期项全部置灰
+                            for (var i = 0, len = tds.size(); i < len; i++) {
+                                if (new Date(tds.eq(i).data('date')) < new Date(start_date)) {
+                                    tds.eq(i).removeClass('active').addClass('day pass');
+                                }
+                            }
+                        }
+                    }
 
                 });
+            }else{
                 // 执行创建日历方法并返回日历拼接字符串
                 str = operat(options);
                 // 生成日历dom
@@ -110,13 +142,13 @@
                         }
                     }
                 }
-
+            }
             // 创建已选择日，赋值为点击选择的日
             var selected_date;
             // 日历出现的动画效果
             $('.calendar-body').removeClass('hide').addClass('fadeInRightBig');
             // 日期点击事件
-            $(document).one('tap','.jm-datepicker td.active', function(event) {
+            $(document).off('tap').on('tap','.jm-datepicker td.active', function(event) {
                 event.preventDefault();
                 // 获取点击日的完整年月日
                 selected_date = $(this).data('date');
