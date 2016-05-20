@@ -257,28 +257,23 @@ caption, th {
             float: right;
             width: 37%;
         }
-        .jm-list-action-l {
-           /* width: 100%;*/
-        }
         .jm-list-date {
             position: absolute;
             top: 18px;
         }
-        .day-count{
+        .day-hotel-count{
                 box-sizing: border-box;
                 width: 60px;
                 height: 36px;
-                border-radius: 50%;
                 text-align: center;
                 line-height: 36px;
                 font-size: 12px;
                 position: absolute;
-                right: -56px;
+                right: -44px;
                 top: 50%;
                 margin-top: -18px;
-                background-color: #fff;
         }
-        .day-count em{
+        .day-hotel-count em{
                     display: inline-block;
                 border: 1px solid #e0e0e0;
                 border-radius: 50%;
@@ -294,3 +289,36 @@ caption, th {
                     right: -46px;
             }
 }
+
+        .hide{
+            display:none;
+        }
+.hotel-index-day-count{
+                box-sizing: border-box;
+                width: 60px;
+                height: 36px;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 36px;
+                font-size: 12px;
+                position: absolute;
+                top: 50%;
+                background-color: #fff;
+
+                    z-index: 0;
+                right: 50%;
+                margin-right: -30px;
+                margin-top: -5px;
+        }
+        .hotel-index-day-count em{
+                    display: inline-block;
+                border: 1px solid #e0e0e0;
+                border-radius: 50%;
+                width: 36px;
+                height: 36px;
+        }
+        @media (max-width: 320px){
+            .hotel-index-day-count {
+                margin-right: -36px;
+            }
+        }

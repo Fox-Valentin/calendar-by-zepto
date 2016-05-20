@@ -1,100 +1,117 @@
 <!doctype html>
 <html lang="zh-cn">
 
-	<head>
-		<meta charset="UTF-8">
-		<title>骏途旅游网_西安旅游_旅游线路_景点门票_酒店预订</title>
-		<meta name="keywords" content="西安旅游,旅游线路,景点门票,酒店预订,骏途旅游网,骏途网">
-		<meta name="description" content="骏途旅游网-陕西领先的在线旅游预订平台,为广大用户提供周边旅游,景点门票,酒店预订,自驾游,国内游,出境旅游线路等预订服务,更专业,品质有保证,让您旅游更安心。">
-		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-		<link rel="stylesheet" href="css/reset.css" />
-		<link rel="stylesheet" href="css/iconfont.css" />
-		<link rel="stylesheet" href="css/layout.css" />
-		<link rel="stylesheet" href="css/list.css" />
-		<link rel="stylesheet" href="css/btn.css" />
-		<link rel="stylesheet" href="css/calc.css" />
-		<link rel="stylesheet" href="css/order.css" />
-    	<link rel="stylesheet" href="css/slider.css" />
-		<script type="text/javascript" src="js/lib/zepto.js" ></script>
-    	<script type="text/javascript" src="js/jssor.slider.min.js"></script>
-		<script type="text/javascript" src="js/lib/tap.js" ></script>
-		<script type="text/javascript" src="js/lib/core.js" ></script>
-		<script type="text/javascript" src="js/spinner.js" ></script>
-		<script type="text/javascript" src="js/app.js" ></script>
-		<script type="text/javascript" src="js/scenic-order.js" ></script>
-	    <link rel="stylesheet" type="text/css" href="css/calendar.css">
-	    <script src="js/calendar.js"></script>
-		<style>
-		.jm-list-action-l{	
-			    /*width: 100%;*/
-		}
-		.jm-form-item .jm-list-action-l input{
-			text-align: left;
-		}
-		.jm-date-start{
-			    width: 30%;
-    			float: left;
-		}
-		.jm-date-end{
-			       float: right;
-    			width: 30%;
-		}
-		.day-count{
-			    box-sizing: border-box;
-			    width: 60px;
-			    height: 36px;
-			    border-radius: 50%;
-			    text-align: center;
-			    line-height: 36px;
-			    font-size: 12px;
-			    position: absolute;
-			    right: -60px;
-			    top: 50%;
-			    margin-top: -10px;
-			    background-color: #fff;
-		}
-		.day-count em{
-				    display: inline-block;
-			    border: 1px solid #e0e0e0;
-			    border-radius: 50%;
-			    width: 36px;
-			    height: 36px;
-		}
-		.jm-list-date{
-			    position: absolute;
-    		top: 18px;
-		}
-		.jm-date-start-title,.jm-date-end-title{
-				position: relative;
-			    top: -12px;
-			    font-size: 10px;
+    <head>
+        <meta charset="UTF-8">
+        <title>骏途旅游网_西安旅游_旅游线路_景点门票_酒店预订</title>
+        <meta name="keywords" content="西安旅游,旅游线路,景点门票,酒店预订,骏途旅游网,骏途网">
+        <meta name="description" content="骏途旅游网-陕西领先的在线旅游预订平台,为广大用户提供周边旅游,景点门票,酒店预订,自驾游,国内游,出境旅游线路等预订服务,更专业,品质有保证,让您旅游更安心。">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/iconfont.css" />
+        <link rel="stylesheet" href="css/layout.css" />
+        <link rel="stylesheet" href="css/list.css" />
+        <link rel="stylesheet" href="css/btn.css" />
+        <link rel="stylesheet" href="css/calc.css" />
+        <link rel="stylesheet" href="css/order.css" />
+        <link rel="stylesheet" href="css/slider.css" />
+        <link rel="stylesheet" href="css/grid.css" />
+        <link rel="stylesheet" href="css/ui-whitespace.css" />
+        <link rel="stylesheet" href="css/index.css" />
+        <script type="text/javascript" src="js/lib/zepto.js" ></script>
+        <script type="text/javascript" src="js/jssor.slider.min.js"></script>
+        <script type="text/javascript" src="js/lib/tap.js" ></script>
+        <script type="text/javascript" src="js/lib/core.js" ></script>
+        <script type="text/javascript" src="js/spinner.js" ></script>
+        <script type="text/javascript" src="js/app.js" ></script>
+        <script type="text/javascript" src="js/scenic-order.js" ></script>
+        <link rel="stylesheet" type="text/css" href="css/calendar.css">
+        <script src="js/calendar.js"></script>
+        <style>
+        .jm-list-action-l{  
+                width: 100%;
+        }
+        .jm-form-item .jm-list-action-l input{
+            text-align: left;
+        }
+        .jm-date-start{
+                width: 35%;
+                float: left;
                     z-index: 1;
-		}
-		.jm-order-btn-wrap{
-			background-color: #fff;
-		}
-		.jssorb05 {
-		    position: absolute;
-		}
-		@media (max-width: 320px){
-			.jm-date-start{
-				    width: 27%;
-			}
-			.jm-date-end{
-	    			width: 27%;
-			}
+        }
+        .jm-date-end{
+                   float: right;
+                width: 35%;
+                    z-index: 1;
+        }
+        
+        .jm-list-date{
+                position: absolute;
+            top: 18px;
+        }
+        .jm-date-start-title,.jm-date-end-title{
+                position: relative;
+                top: -16px;
+                font-size: 10px;
+                    z-index: 1;
+                    left: -4px;
+        }
+        .jm-order-btn-wrap{
+            background-color: #fff;
+        }
+        .jssorb05 {
+            position: absolute;
+        }
+        @media (max-width: 320px){
+            .jm-date-start{
+                    width: 32%;
+            }
+            .jm-date-end{
+                    width: 32%;
+            }
 
-		}
-        /**/
-		</style>
-	</head>
+        }
+        .jm-hotel-date-wrap{
+                margin-bottom: 0;
+                position: relative;
+        }
+        /*hotel-price-star-sel*/
+        .hotel-price-star-sel{
+                background-color: #fff;
+                overflow: hidden;
+        }
+        .hotel-price-sel,.hotel-star-sel{
+            text-align: center;
+            box-sizing: border-box;
+            padding-left: 4px;
+            padding-right: 4px;
+                font-size: 12px;
+                    margin-top: 10px;
+        }
+        .hotel-price-sel-item,.hotel-star-sel-item{
+                border: 1px solid #e0e0e0;
+                border-radius: 5px;
+                padding: 4px;
+        }
+        .hotel-price-sel-active,.hotel-star-sel-active{
+                background-color: #39c3d0;
+                color: #fff;
+                    border: initial;
+        }
+        .hotel-price-star-sel-title{
+            margin-top: 10px;
+        }
+        /*hotel-index-calendar*/
+        
+        </style>
+    </head>
 
-	<body>
-		<header class="jm-header">
-			<a href="#" class="jm-header-left_icon"><i class="jm-iconfont">&#xe679;</i></a>
-			<span>门票订单</span>
-			<a href="#" class="jm-header-right_icon"></a>
-		</header>
+    <body>
+        <header class="jm-header">
+            <a href="#" class="jm-header-left_icon"><i class="jm-iconfont">&#xe679;</i></a>
+            <span>门票订单</span>
+            <a href="#" class="jm-header-right_icon"></a>
+        </header>
     <section class="jm-index-banner">
         <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 720px; height: 340px; overflow: hidden; visibility: hidden;">
             <!-- Loading Screen -->
@@ -129,49 +146,49 @@
             </div>
         </div>
     </section>
-		<section class="jm-pd50">
-			<ul class="jm-list jm-list-text jm-list-active jm-list-cover  jm-list-link  jm-border-tb clearfix" style="margin-bottom:0;">
-				<li class="jm-border-t jm-arrowlink">
-					<span class="jm-li-title">
+        <section class="jm-pd50">
+            <ul class="jm-list jm-list-text jm-list-active jm-list-cover  jm-list-link  jm-border-tb clearfix" style="margin-bottom:0;">
+                <li class="jm-border-t jm-arrowlink">
+                    <span class="jm-li-title">
                         目的地
                     </span>
-					<div class="jm-list-action">
-						西安
-					</div>
-				</li>
-			</ul>
-			<ul class="jm-list jm-list-text jm-list-active jm-list-cover  jm-list-link clearfix"  style="margin-bottom:0;">
-				<li class="jm-border-t jm-form-item jm-date-start">
-					<span class="jm-li-title  jm-date-start-title">入住</span>
-						<input type="hidden" class="date-start" readonly="readonly" data-start="">
-						<div class="day-count"><em><font id="day-count">1</font>天</em></div>
-				</li>
-				<li class="jm-form-item jm-date-end">
-					<span class="jm-li-title jm-date-end-title">离店</span>
-						<input type="hidden" class="date-end" readonly="readonly" data-end="">
-				</li>
-			</ul>
-			<ul class="jm-list jm-list-text jm-list-active jm-list-cover  jm-list-link jm-border-tb clearfix"  style="margin-bottom:0;">
-				<li class="jm-border-t jm-form-item">
-					<span class="jm-li-title"> &nbsp;</span>
-					<div class="jm-list-action-l">
-						<input type="text" placeholder="关键字、位置、品牌、酒店名">
-					</div>
+                    <div class="jm-list-action">
+                        西安
+                    </div>
+                </li>
+            </ul>
+            <ul class="jm-list jm-list-text jm-list-active jm-list-cover  jm-list-link clearfix jm-hotel-date-wrap">
+                <li class="jm-border-t jm-form-item jm-date-start">
+                    <span class="jm-li-title  jm-date-start-title">入住</span>
+                        <input type="hidden" class="date-start" readonly="readonly" data-start="">
+                </li>
+                <div class="hotel-index-day-count"><em><font id="day-count">1</font>天</em></div>
+                <li class="jm-form-item jm-date-end">
+                    <span class="jm-li-title jm-date-end-title">离店</span>
+                        <input type="hidden" class="date-end" readonly="readonly" data-end="">
+                </li>
+            </ul>
+            <ul class="jm-list jm-list-text jm-list-active jm-list-cover  jm-list-link jm-border-tb clearfix"  style="margin-bottom:0;">
+                <li class="jm-border-t jm-form-item">
+                    <span class="jm-li-title"> &nbsp;</span>
+                    <div class="jm-list-action-l">
+                        <input type="text" placeholder="关键字、位置、品牌、酒店名">
+                    </div>
 
-				</li>
-				<li class="jm-border-t jm-form-item">
-					<span class="jm-li-title">&nbsp;</span>
-					<div class="jm-list-action-l">
-						<input type="number" placeholder="价格，星级">
-					</div>
-				</li>
-			</ul>
-			<div class="jm-btn-wrap jm-order-btn-wrap">
-			    <button class="jm-btn-lg  jm-btn-danger">
-			        查询
-			    </button>
-			</div>
-		</section>
+                </li>
+                <li class="jm-border-t jm-form-item">
+                    <span class="jm-li-title">&nbsp;</span>
+                    <div class="jm-list-action-l">
+                        <input type="number" placeholder="价格，星级">
+                    </div>
+                </li>
+            </ul>
+            <div class="jm-btn-wrap jm-order-btn-wrap">
+                <button class="jm-btn-lg  jm-btn-danger">
+                    查询
+                </button>
+            </div>
+        </section>
         <section>
             <header class="jm-header">
                 <a href="#" class="jm-header-left_icon"><i class="jm-iconfont">&#xe679;</i></a>
@@ -184,65 +201,114 @@
                 <li class="jm-border-b" style="background-color: #fff;padding-left: 15px;">陕西</li>
                 <li class="jm-border-b" style="background-color: #fff;padding-left: 15px;">陕西</li>
             </ul>
+            <div class="hotel-price-star-sel">
+                <div class="jm-whitespace hotel-price-star-sel-title">
+                    价格
+                </div>
+                <div class="jm-row jm-whitespace">
+                    <div class="jm-col jm-col-33 hotel-price-sel">
+                        <div class="hotel-price-sel-item hotel-price-sel-active">
+                            不限
+                        </div>
+                    </div>
+                    <div class="jm-col jm-col-33 hotel-price-sel">
+                        <div class="hotel-price-sel-item">
+                            ￥150以下
+                        </div>
+                    </div>
+                    <div class="jm-col jm-col-33 hotel-price-sel">
+                        <div class="hotel-price-sel-item">
+                            ￥150-￥300
+                        </div>
+                    </div>
+                </div>
+                <div class="jm-row jm-whitespace">
+                    <div class="jm-col jm-col-33 hotel-price-sel">
+                        <div class="hotel-price-sel-item">
+                            ￥150-￥300
+                        </div>
+                    </div>
+                    <div class="jm-col jm-col-33 hotel-price-sel">
+                        <div class="hotel-price-sel-item">
+                            ￥150以下
+                        </div>
+                    </div>
+                </div>
+                <div class="jm-whitespace hotel-price-star-sel-title">
+                    星级
+                </div>
+                <div class="jm-row jm-whitespace">
+                    <div class="jm-col jm-col-33 hotel-star-sel">
+                        <div class="hotel-star-sel-item hotel-star-sel-active">
+                            不限
+                        </div>
+                    </div>
+                    <div class="jm-col jm-col-33 hotel-star-sel">
+                        <div class="hotel-star-sel-item">
+                            二星级以下
+                        </div>
+                    </div>
+                    <div class="jm-col jm-col-33 hotel-star-sel">
+                        <div class="hotel-star-sel-item">
+                            三星级
+                        </div>
+                    </div>
+                </div>
+                <div class="jm-row jm-whitespace">
+                    <div class="jm-col jm-col-33 hotel-star-sel">
+                        <div class="hotel-star-sel-item">
+                            四星级
+                        </div>
+                    </div>
+                    <div class="jm-col jm-col-33 hotel-star-sel">
+                        <div class="hotel-star-sel-item">
+                            五星级
+                        </div>
+                    </div>
+                </div>
+                <div class="jm-btn-wrap jm-order-btn-wrap">
+                    <button class="jm-btn-lg  jm-btn-danger">
+                        确定
+                    </button>
+                </div>
+            </div>
         </section>
-		<script type="text/javascript">
-		// $(document).ready(function() {
-		// 	var $date_start = $('.date-start');
-		// 	var $date_end = $('.date-end');
-
-		// 	var options = {
-	 //            jm_datepicker_wrap : $('body'),
-	 //            month_num : 5,
-	 //            ajax_url : 'data.php',
-	 //            start_date : $date_start,
-	 //            end_date : $date_end,
-	 //            day_count : $day_count
-	 //        };
-		// 	$date_start.on('tap', function(event) {
-		// 		if($('.calendar-body').size() > 0) return false;
-		// 		event.preventDefault();
-		// 		$date_start.jm_calendar(options);
-		// 	});
-		// 	$date_end.on('tap', function(event) {
-		// 		if($('.calendar-body').size() > 0) return false;
-		// 		event.preventDefault();
-		// 		$date_end.jm_calendar(options);
-				
-		// 	});
-
-		        
-		// });
+        <script type="text/javascript">
         $(document).ready(function() {
-            var $jm_date_start = $('.jm-date-start');
-            var $jm_date_end = $('.jm-date-end');
-
-            var $date_start = $('.date-start');
-            var $date_end = $('.date-end');
-            var $day_count = $('#day-count')
 
             var options = {
                 jm_datepicker_wrap : $('body'),
                 month_num : 5,
                 ajax_url : 'data.php',
-                start_date : $date_start,
-                end_date : $date_end,
-                day_count : $day_count
+                start_date : $('.date-start'),
+                end_date : $('.date-end'),
+                day_count : $('#day-count'),
+                callback:function(){}
             };
-            $jm_date_start.on('tap',$date_start , function(event) {
+            $('.jm-date-start').on('tap', function(event) {
                 event.preventDefault();
                 if($('.calendar-body').size() > 0) return false;
-                event.preventDefault();
-                $date_start.jm_calendar(options);
+                $('.date-start').jm_calendar(options);
             });
-            $jm_date_end.on('tap', $date_end, function(event) {
+            $('.jm-date-end').on('tap', function(event) {
                 event.preventDefault();
                 if($('.calendar-body').size() > 0) return false;
+                $('.date-end').jm_calendar(options);
+            });
+
+            $('.hotel-price-sel-item').on('tap', function(event) {
                 event.preventDefault();
-                $date_end.jm_calendar(options);
-            });                
+                $('.hotel-price-sel-item').removeClass('hotel-price-sel-active');
+                $(this).addClass('hotel-price-sel-active');
+            });
+            $('.hotel-star-sel-item').on('tap', function(event) {
+                event.preventDefault();
+                $('.hotel-star-sel-item').removeClass('hotel-star-sel-active');
+                $(this).addClass('hotel-star-sel-active');
+            });
         });
-		</script>
-		<script>
+        </script>
+        <script>
     jssor_1_slider_init = function() {
         var jssor_1_SlideoTransitions = [
             [{
@@ -421,6 +487,6 @@
     };
     jssor_1_slider_init();
     </script>
-	</body>
+    </body>
 
 </html>
