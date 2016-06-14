@@ -23,21 +23,22 @@
                 var now = new Date();
                 var date_start = now.getFullYear() + '-' + (now.getMonth() + 1) + '-' + now.getDate();
                 var date_end = addDays(1,now);
+                // date_end = dateFormate(date_end);
                 var week_end = getWeekDay(date_end.getDay());
                 date_end = date_end.getFullYear() + '-' + (date_end.getMonth() + 1) + '-' + (date_end.getDate());
                 var week_start = getWeekDay(now.getDay());
             }else{
                 // 不为空则使用默认值
-                var start_date = new Date($('.date-start').val());
-                var start_end = new Date($('.date-end').val());
+                var start_date = new Date(dateFormate($('.date-start').val()));
+                var start_end = new Date(dateFormate($('.date-end').val()));
                 var date_start = start_date.getFullYear() + '-' + (start_date.getMonth() + 1) + '-' + start_date.getDate();
                 var date_end = start_end.getFullYear() + '-' + (start_end.getMonth() + 1) + '-' + (start_end.getDate());
                 var week_start = getWeekDay(start_date.getDay());
                 var week_end = getWeekDay(start_end.getDay());
             }
 
-            var date_start_default_str = "<div class='date-start-text'><div class='date-start-getDate'>" + date_start + "</div><div class='date-start-getDay'>" + week_start + "</div></div>";
-            var date_end_default_str = "<div class='date-end-text'><div class='date-end-getDate'>" + date_end + "</div><div class='date-end-getDay'>" + week_end + "</div></div>";
+            var date_start_default_str = "<div class='date-start-text' style='letter-spacing: -1px;'><div class='date-start-getDate'>" + date_start + "</div><div class='date-start-getDay'>" + week_start + "</div></div>";
+            var date_end_default_str = "<div class='date-end-text' style='letter-spacing: -1px;'><div class='date-end-getDate'>" + date_end + "</div><div class='date-end-getDay'>" + week_end + "</div></div>";
 
                 $('.date-start').val(date_start);
                 $('.date-end').val(date_end);
@@ -61,7 +62,9 @@
             options.jm_datepicker_wrap.append(str);
             // 若起始结束项不为null，则取其值，否则取空字符串
             var start_date = options.start_date != null ? options.start_date.val() : '';
+            start_date = dateFormate(start_date);
             var end_date = options.end_date != null ? options.end_date.val() : '';
+            end_date = dateFormate(end_date);
             // 请求日=》价格
             if (options.ajax_url != '') {
                 $.getJSON(options.ajax_url, function(json, textStatus) {
@@ -81,53 +84,6 @@
             }else{
                  callCalendar();
             }
-           
-            // }else{
-            //     // 执行创建日历方法并返回日历拼接字符串
-            //     str = operat(options);
-            //     // 生成日历dom
-            //     $('.jm-datepicker').append(str);
-            //     var tds = $('.jm-datepicker td.active');
-            //     // 如果end_date存在，循环日期项，大于结束日期，小于开始日期项全部置黄色
-            //     if (end_date) {
-            //         for (var i = 0, len = tds.size(); i < len; i++) {
-            //             // 如果end_date存在，循环日期项，大于结束日期，小于开始日期项全部置黄色
-            //             if (new Date(tds.eq(i).data('date')) > new Date(start_date) && new Date(tds.eq(i).data('date')) <= new Date(end_date)) {
-            //                 tds.eq(i).addClass('selected1');
-            //             }
-            //             // 如果结束input的data-end属性，值不为空字符串
-            //             // 则日期项与结束日期相等值添加绿色类
-            //             if (options.end_date.attr('data-end') != '') {
-            //                 if (tds.eq(i).data('date') == end_date) {
-            //                     tds.eq(i).removeClass('selected').removeClass('selected1').addClass('selected-1');
-            //                 }
-            //             }
-            //         }
-            //     }
-            //         // 如果start_date存在，循环日期项，大于结束日期，小于开始日期项全部置黄色
-            //         if (start_date) {
-            //             for (var i = 0, len = tds.size(); i < len; i++) {
-            //                 // 如果结束input的data-end属性，值不为空字符串
-            //                 // 则日期项与结束日期相等值添加绿色类
-            //                 if (options.end_date.val() != '') {
-            //                     if (tds.eq(i).data('date') == start_date) {
-            //                         tds.eq(i).removeClass('selected1').removeClass('selected-1').addClass('selected');
-            //                     }
-            //                 }
-            //             }
-            //         }
-            //     //  若事件源为结束input
-            //     if ($target.hasClass('date-end')) {
-            //         if (start_date) {
-            //             // 如果start_date存在，循环日期项，小于开始日期项全部置灰
-            //             for (var i = 0, len = tds.size(); i < len; i++) {
-            //                 if (new Date(tds.eq(i).data('date')) < new Date(start_date)) {
-            //                     tds.eq(i).removeClass('active').addClass('day pass');
-            //                 }
-            //             }
-            //         }
-            //     }
-
             function callCalendar(){
                     // 执行创建日历方法并返回日历拼接字符串
                     str = operat(options);
@@ -139,11 +95,6 @@
                         for (var i = 0, len = tds.size(); i < len; i++) {
                             // 如果结束input的data-end属性，值不为空字符串
                             // 则日期项与开始日期相等值添加绿色类
-                            // if (options.end_date.val() != '') {
-                            //     if (tds.eq(i).data('date') == start_date) {
-                            //         tds.eq(i).removeClass('selected1').removeClass('selected-1').addClass('selected');
-                            //     }
-                            // }
                             if (new Date(tds.eq(i).data('date')) >= new Date(start_date) && new Date(tds.eq(i).data('date')) <= new Date(end_date)) {
                                     tds.eq(i).addClass('selected1');
                                 }
@@ -194,7 +145,7 @@
             $(document).one('tap','.jm-datepicker td.active', function(event) {
                 event.preventDefault();
                 // 获取点击日的完整年月日
-                selected_date = $(this).data('date');
+                selected_date = dateFormate($(this).data('date'));
                 // 获取所有的可选择td
                 var tds = $('.jm-datepicker td.active');
                 // 全部去除渲染颜色状态类 后面重新渲染
@@ -205,27 +156,28 @@
                     // 业务逻辑，当起始日期选中，结束日期默认加一天
                     // 只选择结束日期，则不进行下列流程
                     // 将选择的日历日期赋值给事件绑定的input
-                    $target.val(selected_date);
-                    $target.attr('data-start', selected_date);
+                    $target.val(dateReformate(selected_date));
+                    $target.attr('data-start', dateReformate(selected_date));
 
                     tds.removeClass('selected');
                     $(this).addClass('selected');
                     // 给起始日期的dom添加日期和周日期
-                    $('.date-start-getDate').html(selected_date);
+                    $('.date-start-getDate').html(dateReformate(selected_date));
                     $('.date-start-getDay').html(getWeekDay(new Date(selected_date).getDay()));
                     // 如果事件源是结束时间，取选到值
                     start_date = selected_date;
                     // 判断是否存在结束日期项
                     // 判断所选择的开始日期大于结束日期
-                    if (options.end_date != null && new Date(options.start_date.val()) >= new Date(options.end_date.val())) {
+                    if (options.end_date != null && new Date(dateFormate(options.start_date.val())) >= new Date(dateFormate(options.end_date.val()))) {
                         // 增加一天
-                        var before_date = addDays(1,options.start_date.val());
+                        var before_date = addDays(1,dateFormate(options.start_date.val()));
                         before_date = before_date.getFullYear() + '-' + (before_date.getMonth()+1) + '-' + (before_date.getDate());
                         // 结束选项默认为起始日期+1
                         options.end_date.val(before_date);
+                        options.end_date.attr('data-end', dateReformate(before_date));
                         // 给结束日期的dom添加日期和周日期
-                        $('.date-end-getDate').html(before_date);
-                        $('.date-end-getDay').html(getWeekDay(new Date(before_date).getDay()));
+                        $('.date-end-getDate').html(dateReformate(before_date));
+                        $('.date-end-getDay').html(getWeekDay(new Date(dateFormate(before_date)).getDay()));
                     }
 
 
@@ -241,7 +193,7 @@
                     // 判断是否存在开始日期项
                     // 判断所选择的结束日期等于开始日期
                        
-                    if (options.start_date != null && options.start_date.val() == selected_date) {
+                    if (options.start_date != null && dateFormate(options.start_date.val()) == selected_date) {
                     // 等于则结束
                        quit();
                        return false;
@@ -249,12 +201,12 @@
                     // 如果事件源是起始时间，取选到值
                     end_date = selected_date;
                     // 给结束日期的dom添加日期和周日期
-                    $('.date-end-getDate').html(selected_date);
+                    $('.date-end-getDate').html(dateReformate(selected_date));
                     $('.date-end-getDay').html(getWeekDay(new Date(selected_date).getDay()));
                     // 将选择的日历日期赋值给事件绑定的input
-                    $target.val(selected_date);
+                    $target.val(dateReformate(selected_date));
                     // 如果事件源是结束时间，则给此dom属性赋值选中日期
-                    $target.attr('data-end', selected_date);
+                    $target.attr('data-end', dateReformate(selected_date));
                 }
 
 
@@ -298,13 +250,31 @@
                     // var count = $('.selected1').size() > 0 ? $('.selected1').size() : 1;
                     options.day_count.html(count);
                 }
-               options.callback() 
+               options.callback();
             });
             // 日历关闭事件
             $(document).on('tap', '.close-pup-body', function(event) {
                 event.preventDefault();
                 quit();
             });
+            function dateFormate(dateStr){
+                // 正则 验证月份-9-
+                var mReg =  /\-[0-9]{1}\-/;
+                // 补全月份，横杠替换为斜杠
+                if(mReg.test(dateStr)){
+                    dateStr = dateStr.replace(/\-/,"\-0");
+                }
+                return dateStr.replace(/\-/g,"\/");
+            }
+            function dateReformate(dateStr){
+                // 正则 验证斜杠
+                var mReg =  /\/*/;
+                // 斜杠替换为横杠
+                if(mReg.test(dateStr)){
+                    dateStr = dateStr.replace(/\//g,"\-");
+                }
+                return dateStr;
+            }
             function quit() {
                 // 日历推出动画
                 $('.calendar-body').removeClass('fadeInRightBig').addClass('fadeOutRightBig');
